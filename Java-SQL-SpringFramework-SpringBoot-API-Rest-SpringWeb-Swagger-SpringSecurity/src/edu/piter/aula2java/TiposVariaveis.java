@@ -35,11 +35,11 @@ public class TiposVariaveis {
 
     !       Obs:
         Mesmo tendo 4 tipos de númericos inteiros, é muito comum nos usarmos "int" nas nossas aplicações, 
-    por uma questão de compatibilidade da JVN, ela sempre busca converter tipos literais, por exemplo "100",
-    mesmo sendo um "byte" ele tenta converter para "int", e no caso de "30.000", mesmo sendo um "short" ele já
-    tenta converter para "int", acima de "2.147.483.647" obviamente ele vai tentar converter para "long", mas
-    na linguagem Java é muito comum nós encontrarmos opções numéricas do tipo "int". Então como padrão nós
-    utilizamos na maioria dos casos de tipos numéricos a opção "int".
+    por uma questão de compatibilidade da JVM(Java Virtual Machine), ela sempre busca converter tipos literais, 
+    por exemplo "100", mesmo sendo um "byte" ele tenta converter para "int", e no caso de "30.000", mesmo sendo 
+    um "short" ele já tenta converter para "int", acima de "2.147.483.647" obviamente ele vai tentar converter 
+    para "long", mas na linguagem Java é muito comum nós encontrarmos opções numéricas do tipo "int". Então como 
+    padrão nós utilizamos na maioria dos casos de tipos numéricos a opção "int".
 
 ?       Os tipos primitivos que podem conter partes fracionárias podem ser representados por dois tipos:
 
@@ -196,11 +196,142 @@ public class TiposVariaveis {
         System.out.println(NUMEROIMUTAVEL);
 
 /*
-!           CONCLUSÃO
+!           CONCLUSÃO SOBRE CONSTANTES
 
         Compreendemos que para declarar uma variável como uma constante, utilizamos a palavra "final", mas por
     convenção, esta variável deverá ser escrita em CAIXA ALTA.
- */
+*/
+/*
+!           TIPOS BOOLEAN E CHAR
 
+?       Tipo boolean:
+
+        O tipo "boolean" em Java é um tipo de dado primitivo que representa dois valores possíveis: "true" e "false".
+    Ele é usado principalmente para controle de fluxos de execução e avaliar condições em estrutura de controle,
+    como "if", "while", e "for".
+
+?       Características do Tipo "boolean":
+
+        Valores possíveis: "true" ou "false".
+
+?        Tamanho:
+
+        O tamanho exato de um "boolean" não é especificado pela linguagem Java, mas ele é geralmente representado
+    por um único bit. Iternamente, no entanto, ele pode ser armazenado como um byte para facilitar a manipulação
+    ela JVM(Java Virtual Machine).
+
+?       Uso:
+
+        - Controle de Fluxo: Usado em expressões condicionais para determinar o fluxo do programa.
+
+        - Lógica: Usado em operações lógicas, como AND ("&"), OR ("||"), e NOT ("!").
+
+!       EXEMPLO DE USO:
+ */
+//?     Estruturas de controle:
+
+        boolean isJavaFun = true;
+        boolean isFishTasty = false;
+
+        if (isJavaFun) {
+            System.out.println("java é divertido!");
+        } else {
+            System.out.println("Java não é divertido!");
+        }
+
+        if (isFishTasty) {
+            System.out.println("Peixe é saboroso!");
+        } else {
+            System.out.println("Peixo não é saboroso!");
+        }
+
+//?     Operações Lógicas:
+
+        boolean a = true;
+
+        boolean b = false;
+
+        boolean c = a && b; /* "c" é false, porque as variáveis são diferentes uma é "true" e a outra "false". 
+        Para "c" ser igual a "true" as duas variáveis teriam que ser "true", "a = true;" e "b = true;*/
+
+        boolean d = a || b; // "d" é true, porque uma das variáveis é igual a "true"
+        
+        boolean e = !a; 
+        // "e" é igual a false, porque o sinal de " ! " significa "oposto", e o oposto de "true" é "false".
+
+        System.out.println(a+", "+b+", "+c+", "+d+", "+e);
+
+//?     Em Laços de Repetição:
+
+        boolean condition = true;
+
+        while (condition) {
+            System.out.println("Isso será impresso uma vez.");
+            condition = false; // Isso evita o loop infinito!
+        }        
     }
-}   
+}
+//!     EXEMPLOS PRÁTICOS
+
+class ExemposPraticosBoolean {
+    public static void main(String[] args){
+
+//?    Validação Simples:
+
+        int age = 20;
+        boolean isAdult = age >= 18;
+
+        if (isAdult) {
+            System.out.println("Você é maior de idade!");
+        } else {
+            System.out.println("Você é menor de idade!");
+        }
+
+//?    Autenticação de usuário Simples:
+
+        String userName = "admin";
+        String password = "123";
+
+        boolean isAuthenticated = userName.equals("admin") && password.equals("123");
+
+        if (isAuthenticated) {
+            System.out.println("Acesso permitido!");
+        } else {
+            System.out.println("Acesso negado!");
+        }
+/*
+?       Considerações sobre o tipo "boolean"
+
+        - Eficiência: O tipo "boolean" é altamente eficiente para apresentar estados binários.
+
+        - Valores Padrão: O valor padrão de um "boolean" não inicializado é "false".
+
+        - Uso em Collections: Em coleções Java, como "ArrayList", os valores booleanos devem ser armazenados
+        usando wrapped class "Boolean"
+
+?       Wrapper Class "Boolean"
+    
+        Para usar booleanos em coleções ou quando é necessária uma referência a um objeto, a classe wrapper "Boolean"
+    é usada:
+
+        Boolean isjavaFun = Boolean.TRUE;
+        Boolean isFishTasty = Boolean.FALSE;
+
+        ArrayList<Boolean> booleanList = new ArrayList<>();
+        booleanList.add(isjavaFun);
+        booleanList.add(isFishTasty);
+        System.out.println(booleanList);
+
+        A classe "Boolean" também fornece métodos utilitários, como "parseBoolean" e "valueOf":
+
+        boolean parsedBoolean = Boolean.parseBoolean("true"); - true
+        Boolean booleanObject = Boolean.valueOf("false"); - false
+
+!       CONCLUSÃO SOBRE BOOLEAN
+
+        O tipo "boolean" é essencial em Java para controle de fluxo e lógica de programação, sendo usado em
+    expressões condicionai, laços de repetição e operações lógicas. Sua simplicidade e eficiência o tornam uma
+    ferramenta fundamental na linguagem.
+*/
+    }
+}
