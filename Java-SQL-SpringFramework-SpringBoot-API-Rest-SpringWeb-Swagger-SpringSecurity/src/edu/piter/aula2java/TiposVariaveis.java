@@ -327,7 +327,7 @@ class ExemposPraticosBoolean {
         boolean parsedBoolean = Boolean.parseBoolean("true"); - true
         Boolean booleanObject = Boolean.valueOf("false"); - false
 
-!           CONCLUSÃO SOBRE BOOLEAN
+!           CONCLUSÃO SOBRE "BOOLEAN"
 
         O tipo "boolean" é essencial em Java para controle de fluxo e lógica de programação, sendo usado em
     expressões condicionai, laços de repetição e operações lógicas. Sua simplicidade e eficiência o tornam uma
@@ -412,6 +412,45 @@ class ExemposPraticosBoolean {
         char unicodeExample = '\u263A'; // ( ? )
 
         System.out.println("Hello"+newLine+"World!"+tab+" aspas simples "+singleQuote+" aspas duplas "+doubleQuote+" barra invertida "+backslash+" Exemplo de unicode "+unicodeExample);
+/*
+!               CONVERSÃO ENTRE "CHAR" E INTEIROS
 
+?           Conversão Implícita:
+
+        - O "char" pode ser tratado como um número inteiro(seu valor Unicode)
+
+        - Operações aritméticas podem ser realizadas diretamente.
+*/        
+
+        char c = 'A';
+        int charCode = c; // 65
+        System.out.println(charCode);
+/*
+!               EXEMPLOS PRÁTICOS:
+
+?           Iterar Sobre Caracteres:
+*/
+        for (char d = 'A'; d <= 'Z'; d++){
+            System.out.println(d + " "); // Imprime A B C D... Z
+        }
+/*
+?           Verificar Tipo de Caractere:
+*/        
+        char ch = '5';
+        if (Character.isDigit(ch)) {
+            System.out.println(ch + " é um dígito.");
+        } else if (Character.isLetter(ch)) {
+            System.out.println(ch + " é uma letra.");
+        } else {
+            System.out.println(ch + " é um símbolo.");
+        }
+/*
+!               CONCLUSÃO SOBRE "CHAR"
+
+        O tipo "char" é fundamental para manipulação de caracteres em Java. Ele permite representar e operar
+    diretamente com caracteres individuais, suportando uma ampla gama de símbolos graças à codificação Unicode.
+    O "char" é utilizado frequentemente em manipulações de texto, validação de entrada e operações que envolvem
+    caracteres únicos.
+*/
     }
 }
