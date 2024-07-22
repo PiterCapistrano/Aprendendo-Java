@@ -204,7 +204,7 @@ public class TiposVariaveis {
 /*
 !           TIPOS BOOLEAN E CHAR
 
-?       Tipo boolean:
+!           TIPO BOOLEAN:
 
         O tipo "boolean" em Java é um tipo de dado primitivo que representa dois valores possíveis: "true" e "false".
     Ele é usado principalmente para controle de fluxos de execução e avaliar condições em estrutura de controle,
@@ -226,7 +226,7 @@ public class TiposVariaveis {
 
         - Lógica: Usado em operações lógicas, como AND ("&"), OR ("||"), e NOT ("!").
 
-!       EXEMPLO DE USO:
+!           EXEMPLO DE USO:
  */
 //?     Estruturas de controle:
 
@@ -271,7 +271,7 @@ public class TiposVariaveis {
         }        
     }
 }
-//!     EXEMPLOS PRÁTICOS
+//!         EXEMPLOS PRÁTICOS
 
 class ExemposPraticosBoolean {
     public static void main(String[] args){
@@ -327,11 +327,91 @@ class ExemposPraticosBoolean {
         boolean parsedBoolean = Boolean.parseBoolean("true"); - true
         Boolean booleanObject = Boolean.valueOf("false"); - false
 
-!       CONCLUSÃO SOBRE BOOLEAN
+!           CONCLUSÃO SOBRE BOOLEAN
 
         O tipo "boolean" é essencial em Java para controle de fluxo e lógica de programação, sendo usado em
     expressões condicionai, laços de repetição e operações lógicas. Sua simplicidade e eficiência o tornam uma
-    ferramenta fundamental na linguagem.
+    ferramenta fundamental na linguagem.    
 */
+/*
+!           TIPO CHAR
+
+        O tipo "char" em Javaé um tipo de dado primitivo que representa um único caractere. Ele é usado para
+    armazenar caracteres individuais como letras, dígitos, símbolos e caracteres de controle.
+
+?       Características do Tipo "char"
+
+        Tamanho: "char" é um tipo de 16 bits (2 bytes) que segue a codificação Unicode. Isso significa que ele
+    pode representar 2^16 (ou 65.536) caracteres distintos.
+
+        Valores: Pode armazenar qualquer caractere do conjunto Unicode, que inclui letras, dígitos, símbolos
+    e caracteres de controle. Os valores vão de "\u0000" (ou 0) a "\uffff" (ou 65.535).
+
+        Representação: Pode ser representando diretamente entre aspas simples ("'a'", "'1'", "'@'").
+    Pode ser representado usando códigos Unicode ("'\u0041'" para "'A'").
+
+!           EXEMPLOS DE USO
+
+?       Declaração e Inicialização:
+ */
+
+        char letterA = 'A';
+        char digit1 = '1';
+        char symbolAt = '@';
+        char unicodeChar = '\u0041'; // 'A'
+
+        System.out.println(letterA+", "+digit1+", "+symbolAt+", "+unicodeChar);
+
+/*
+?       Operações com "char":
+*/      
+        char letterB = (char)(letterA + 1); // 'B'
+        System.out.println(letterB);
+/*
+?       Usos Comuns:
+
+        Em estruturas de controle:
+*/
+        char grade = 'A';
+        if (grade == 'A') {
+            System.out.println("Excelente");
+        } else if (grade == 'B') {
+            System.out.println("Good!");
+        } else {
+            System.out.println("Keep trying!");
+        }
+/*
+?       Trabalhando com Strings: 
+*/
+        String greeting = "Hello";
+        char firstChar = greeting.charAt(0); // (0) = 'H', (1) = 'e', (2) = 'l', (3) = 'l', (4) = 'o'.
+        System.out.println(greeting+", "+firstChar);
+/*
+!               CARACTERES ESPECIAIS E DE ESCAPE
+
+        Caracteres de escape são usados para apresentar caracteres especiais que não podem ser
+    digitados diretamente. Alguns exemplos incluem:
+        
+        - '\n' (nova linha)
+
+        - '\t' (tabulação)
+
+        - '\'' (aspas simples)
+
+        - '\"' (aspas duplas)
+
+        - '\\' (barra invertida)
+
+        - '\u263A' (caractere Unicode)
+*/        
+        char newLine = '\n';
+        char tab = '\t';
+        char singleQuote = '\'';
+        char doubleQuote = '\"';
+        char backslash = '\\';
+        char unicodeExample = '\u263A'; // ( ? )
+
+        System.out.println("Hello"+newLine+"World!"+tab+" aspas simples "+singleQuote+" aspas duplas "+doubleQuote+" barra invertida "+backslash+" Exemplo de unicode "+unicodeExample);
+
     }
 }
