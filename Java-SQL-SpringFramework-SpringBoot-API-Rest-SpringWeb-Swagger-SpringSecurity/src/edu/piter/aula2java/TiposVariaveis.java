@@ -452,5 +452,28 @@ class ExemposPraticosBoolean {
     O "char" é utilizado frequentemente em manipulações de texto, validação de entrada e operações que envolvem
     caracteres únicos.
 */
+/*
+!               CLASSE STRING
+
+        O tipo "String" em Java é uma classe que representa uma sequência de caracteres. Ao contrário dos tipos
+    primitivos como "int" e "char", "String" é uma classe e, portanto, possui métodos e propriedades que podem
+    ser utilizados para manipular sequências de caracteres.
+
+!               CARACTERÍSTICAS DO TIPO "STRING"
+
+?           Imutabilidade:
+
+        Uma "String" em Java é imutável. Uma vez que um objeto "String" é criado, seu valor não pode ser alterado.
+    Qualquer operação que parece modificar uma "String" na verdade cria uma nova "String".
+
+?           Criação de Strings:
+
+        Strings podem ser criadas de várias maneiras:
+*/
+        String s1 = "Hello";
+        String s2 = new String("World");
+        char[] charArray = {'J', 'a', 'v', 'a'};
+        String s3 = new String(charArray);
+        System.out.println(s1+", "+s2+", "+charArray+", "+s3);
     }
 }
