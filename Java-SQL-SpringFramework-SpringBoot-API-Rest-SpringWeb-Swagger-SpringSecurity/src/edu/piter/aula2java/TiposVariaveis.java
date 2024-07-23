@@ -645,8 +645,14 @@ class  PalindromeExample2 {
         - "toLowerCase()" converte a string para minúsculas, tornando a comparação insensível a maiúsculas/minúsculas.
 
         Essa versão lidará com entradas como "A man, a plan, a canal, Panama!" corretamente.
-*/
 
+! -------------------------------------------------------------------------------------------------------------------------
+
+?           Contar Ocorrências de um Caractere:
+
+        A função countOccurrences conta o número de vezes que um determinado caractere (ch) aparece em uma 
+    string (s).
+*/
 class CountOccurrencesExample {
     public static void main(String[] args) {
         CountOccurrencesExample example = new CountOccurrencesExample();
