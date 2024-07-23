@@ -201,9 +201,15 @@ public class TiposVariaveis {
         Compreendemos que para declarar uma variável como uma constante, utilizamos a palavra "final", mas por
     convenção, esta variável deverá ser escrita em CAIXA ALTA.
 */
+
+    }
+}
 /*
 !           TIPOS BOOLEAN E CHAR
-
+*/
+class AboutBoolean {
+    public static void main(String[] args) {
+/*
 !           TIPO BOOLEAN:
 
         O tipo "boolean" em Java é um tipo de dado primitivo que representa dois valores possíveis: "true" e "false".
@@ -255,7 +261,7 @@ public class TiposVariaveis {
         Para "c" ser igual a "true" as duas variáveis teriam que ser "true", "a = true;" e "b = true;*/
 
         boolean d = a || b; // "d" é true, porque uma das variáveis é igual a "true"
-        
+
         boolean e = !a; 
         // "e" é igual a false, porque o sinal de " ! " significa "oposto", e o oposto de "true" é "false".
 
@@ -274,7 +280,7 @@ public class TiposVariaveis {
 //!         EXEMPLOS PRÁTICOS
 
 class ExemposPraticosBoolean {
-    public static void main(String[] args){
+public static void main(String[] args){
 
 //?    Validação Simples:
 
@@ -302,37 +308,43 @@ class ExemposPraticosBoolean {
 /*
 ?       Considerações sobre o tipo "boolean"
 
-        - Eficiência: O tipo "boolean" é altamente eficiente para apresentar estados binários.
+- Eficiência: O tipo "boolean" é altamente eficiente para apresentar estados binários.
 
-        - Valores Padrão: O valor padrão de um "boolean" não inicializado é "false".
+- Valores Padrão: O valor padrão de um "boolean" não inicializado é "false".
 
-        - Uso em Collections: Em coleções Java, como "ArrayList", os valores booleanos devem ser armazenados
-        usando wrapped class "Boolean"
+- Uso em Collections: Em coleções Java, como "ArrayList", os valores booleanos devem ser armazenados
+usando wrapped class "Boolean"
 
 ?       Wrapper Class "Boolean"
-    
-        Para usar booleanos em coleções ou quando é necessária uma referência a um objeto, a classe wrapper "Boolean"
-    é usada:
 
-        Boolean isjavaFun = Boolean.TRUE;
-        Boolean isFishTasty = Boolean.FALSE;
+Para usar booleanos em coleções ou quando é necessária uma referência a um objeto, a classe wrapper "Boolean"
+é usada:
 
-        ArrayList<Boolean> booleanList = new ArrayList<>();
-        booleanList.add(isjavaFun);
-        booleanList.add(isFishTasty);
-        System.out.println(booleanList);
+Boolean isjavaFun = Boolean.TRUE;
+Boolean isFishTasty = Boolean.FALSE;
 
-        A classe "Boolean" também fornece métodos utilitários, como "parseBoolean" e "valueOf":
+ArrayList<Boolean> booleanList = new ArrayList<>();
+booleanList.add(isjavaFun);
+booleanList.add(isFishTasty);
+System.out.println(booleanList);
 
-        boolean parsedBoolean = Boolean.parseBoolean("true"); - true
-        Boolean booleanObject = Boolean.valueOf("false"); - false
+A classe "Boolean" também fornece métodos utilitários, como "parseBoolean" e "valueOf":
+
+boolean parsedBoolean = Boolean.parseBoolean("true"); - true
+Boolean booleanObject = Boolean.valueOf("false"); - false
 
 !           CONCLUSÃO SOBRE "BOOLEAN"
 
-        O tipo "boolean" é essencial em Java para controle de fluxo e lógica de programação, sendo usado em
-    expressões condicionai, laços de repetição e operações lógicas. Sua simplicidade e eficiência o tornam uma
-    ferramenta fundamental na linguagem.    
-*/
+O tipo "boolean" é essencial em Java para controle de fluxo e lógica de programação, sendo usado em
+expressões condicionai, laços de repetição e operações lógicas. Sua simplicidade e eficiência o tornam uma
+ferramenta fundamental na linguagem.    
+*/    
+
+    }
+}
+
+class AboutChar {
+    public static void main(String[] args) {
 /*
 !           TIPO CHAR
 
@@ -354,7 +366,6 @@ class ExemposPraticosBoolean {
 
 ?       Declaração e Inicialização:
  */
-
         char letterA = 'A';
         char digit1 = '1';
         char symbolAt = '@';
@@ -370,7 +381,7 @@ class ExemposPraticosBoolean {
 /*
 ?       Usos Comuns:
 
-        Em estruturas de controle:
+ Em estruturas de controle:
 */
         char grade = 'A';
         if (grade == 'A') {
@@ -389,20 +400,20 @@ class ExemposPraticosBoolean {
 /*
 !               CARACTERES ESPECIAIS E DE ESCAPE
 
-        Caracteres de escape são usados para apresentar caracteres especiais que não podem ser
-    digitados diretamente. Alguns exemplos incluem:
-        
-        - '\n' (nova linha)
+ Caracteres de escape são usados para apresentar caracteres especiais que não podem ser
+digitados diretamente. Alguns exemplos incluem:
+ 
+ - '\n' (nova linha)
 
-        - '\t' (tabulação)
+ - '\t' (tabulação)
 
-        - '\'' (aspas simples)
+ - '\'' (aspas simples)
 
-        - '\"' (aspas duplas)
+ - '\"' (aspas duplas)
 
-        - '\\' (barra invertida)
+ - '\\' (barra invertida)
 
-        - '\u263A' (caractere Unicode)
+ - '\u263A' (caractere Unicode)
 */        
         char newLine = '\n';
         char tab = '\t';
@@ -417,9 +428,9 @@ class ExemposPraticosBoolean {
 
 ?           Conversão Implícita:
 
-        - O "char" pode ser tratado como um número inteiro(seu valor Unicode)
+ - O "char" pode ser tratado como um número inteiro(seu valor Unicode)
 
-        - Operações aritméticas podem ser realizadas diretamente.
+ - Operações aritméticas podem ser realizadas diretamente.
 */        
 
         char c = 'A';
@@ -447,11 +458,19 @@ class ExemposPraticosBoolean {
 /*
 !               CONCLUSÃO SOBRE "CHAR"
 
-        O tipo "char" é fundamental para manipulação de caracteres em Java. Ele permite representar e operar
-    diretamente com caracteres individuais, suportando uma ampla gama de símbolos graças à codificação Unicode.
-    O "char" é utilizado frequentemente em manipulações de texto, validação de entrada e operações que envolvem
-    caracteres únicos.
+ O tipo "char" é fundamental para manipulação de caracteres em Java. Ele permite representar e operar
+diretamente com caracteres individuais, suportando uma ampla gama de símbolos graças à codificação Unicode.
+O "char" é utilizado frequentemente em manipulações de texto, validação de entrada e operações que envolvem
+caracteres únicos.
 */
+    }
+}
+
+/**
+ * AboutStrings
+ */
+class AboutStrings {
+    public static void main(String[] args) {
 /*
 !               CLASSE STRING
 
@@ -475,5 +494,329 @@ class ExemposPraticosBoolean {
         char[] charArray = {'J', 'a', 'v', 'a'};
         String s3 = new String(charArray);
         System.out.println(s1+", "+s2+", "+charArray+", "+s3);
+/* 
+?           Concatenação:
+
+        Strings podem ser concatenadas usando o operador " + " ou o método " concat ":
+*/
+        String s4 = s1 + " " + s2; // " Hello World "
+        String s5 = s1.concat(" ").concat(s2); // " Hello World "
+        System.out.println(s4);
+        System.out.println(s5);
+/*
+?           Comprimento:
+
+        O comprimento de uma "String" pode ser obtido usando o método "length":
+*/
+        int len = s1.length(); // Quantidade de caracteres da variável, que nesse caso é = 5
+        System.out.println(len);
+/*
+?           Comparação:
+
+        Comparação de strings pode ser feita usando "equals", "equalsIgnoreCase", "compareTo" e 
+    "compareToIgnoreCase":
+*/
+        boolean isEqual = s1.equals(s2); // resultado = false. Porque o valor de s1 é diferente do valor de s2.
+        boolean isEqualIgnoreCase = s1.equalsIgnoreCase("hello"); // resultado = true. Porque o valor de s1 é igual a "Hello".
+        int comparison = s1.compareTo(s2); // possiveis resultados em valores numéricos = negativo, zero ou positivo.
+        System.out.println(isEqual+", "+isEqualIgnoreCase+", "+comparison);
+/*
+!               MÉTODOS COMUNS DA CLASSE "STRING"
+
+?           charAt(int index):
+
+        Retorna o caractere na posição especificada.
+*/
+        char ch = s1.charAt(1); 
+        // A impressão será " e " por que o número "1" representa o segundo caractere do valor da variável "s1".
+        System.out.println(ch);
+/*
+?           substring(int beginIndex, int endIndex):
+
+        Retorna uma nova string que é uma subsequência da string original.
+*/        
+        String sub = s1.substring(1, 4);
+/*      A impressão será " ell " por que o número "1" representa o segundo caractere e inicia a leitura,
+    e o número "4" representa o final da impressão, que para no quarto caractere que é "l" do valor da variável "s1".
+*/
+        System.out.println(sub);
+/*
+?           toUpperCase() e toLowerCase():
+
+        Retorna uma nova string com todos os caracteres em maiúsculas ou minúsculas.
+*/
+        String upper = s1.toUpperCase(); // Será impresso "HELLO", tudo em maiúsculo.
+        String lower = s1.toLowerCase(); // Será impresso "hello", tudo em minúsculo.
+        System.out.println(upper+", "+lower);
+/*
+?           trim():
+
+        Remove espaços em branco no início e no fim da string.
+*/
+        String trimmed = "        Hello         ".trim(); // Será impresso "Hello" sem os espaços em branco.
+        String semTrim = "        Hello         ";
+        System.out.println(trimmed+","+semTrim);
+/*
+?           replace(char oldChar, char newChar):
+
+        Substitui todas as ocorrências de um caractere por outro.
+*/
+        String replaced = s1.replace('l', 's'); 
+        // Substitui os caracteres "l" do valor da String por "s".
+        System.out.println(replaced);
+/*
+?           split(String regex):
+
+        Divide a string em um array de strings com base em um delimitador especificado.
+*/
+        String[] parts = "Java is fun".split(" "); 
+// O método acima retorna uma lista onde o limitador é o espaço formando a seguinte lista ["Java", "is", "fun"].
+        System.out.println(parts);
     }
 }
+/*
+!               EXEMPLOS PRÁTICOS
+
+?           Verificar Palíndromo:
+
+        A função "isPalindrome" verifica se uma dada string é um palíndromo. Um palíndromo é uma palavra, frase, 
+    número ou qualquer outra sequência de caracteres que lida da mesma forma de trás para frente (ignorando 
+    espaços, pontuações e maiúsculas/minúsculas).
+*/
+class  PalindromeExample {
+    public static void main(String[] args) {
+        PalindromeExample example = new PalindromeExample();
+
+        System.out.println(example.isPalindrome("radar")); // true
+        System.out.println(example.isPalindrome("hello")); // false
+        System.out.println(example.isPalindrome("Level")); // false
+        System.out.println(example.isPalindrome("world")); // false
+    }
+
+    public boolean isPalindrome(String s) {
+        String reversed = new StringBuilder(s).reverse().toString();
+        return s.equals(reversed);
+    }
+}
+/*
+?           Explicação do Resultado:
+
+        - A função recebe uma string "s" como parâmetro.
+
+        - Usa "StringBuilder" para criar uma nova instância com a string "s".
+
+        - O método "reverse()" de "StringBuilder" inverte a sequência de caracteres.
+
+        - "toString()" converte o "StringBuilder" invertido de volta para uma string normal.
+
+        - Armazena essa string invertida na variável "reversed".
+
+        - A função compara a string original "s" com a string invertida "reserved" usando o método "equals".
+
+        - "s.equals(reversed)" retorna "true" se "s" e "reversed" forem iguais, ou seja, se "s" for uma políndromo,
+        e "false" caso contrário.
+
+?           Limitações:
+
+        A função na forma apresentada considera a string como sensível a maiúsculas e não ignora espaços ou
+    pontuações. Para considerar essas variações, a função pode ser modificada para normalizar a string antes de
+    verificar o palíndromo, por exemplo:
+*/
+class  PalindromeExample2 {
+    public static void main(String[] args) {
+        PalindromeExample2 example = new PalindromeExample2();
+
+        System.out.println(example.isPalindrome("radar")); // true
+        System.out.println(example.isPalindrome("hello")); // false
+        System.out.println(example.isPalindrome("Level")); // true
+        System.out.println(example.isPalindrome("world")); // false
+    }
+    public boolean isPalindrome(String s) {
+        String normalized = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+        String reversed = new StringBuilder(normalized).reverse().toString();
+        return normalized.equals(reversed);
+    }
+}
+/*
+?           Explicação da Versão Modiicada:
+
+        - "replaceAll("[^a-zA-Z0-9]", "")" remove todos os caracteres não alfanuméricos.
+
+        - "toLowerCase()" converte a string para minúsculas, tornando a comparação insensível a maiúsculas/minúsculas.
+
+        Essa versão lidará com entradas como "A man, a plan, a canal, Panama!" corretamente.
+*/
+
+class CountOccurrencesExample {
+    public static void main(String[] args) {
+        CountOccurrencesExample example = new CountOccurrencesExample();
+        
+        System.out.println(example.countOccurrences("hello", 'l')); // 2
+        System.out.println(example.countOccurrences("hello", 'o')); // 1
+        System.out.println(example.countOccurrences("hello", 'h')); // 1
+        System.out.println(example.countOccurrences("hello", 'a')); // 0
+    }
+
+    public int countOccurrences(String s, char ch) {
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == ch) {
+                count++;
+            }
+        }
+        return count;
+    }
+}
+/*
+?           Explicação do Resultado:
+
+        - A função inicia um contador "count" com valor 0.
+
+        - A função usa um loop "for" que vai desde o índice 0 até o último índice da string "s"("s.length() - 1").
+
+        - Em cada interação, a função obtém o caractere na posição "i" usando "s.charAt(i)".
+
+        - Se o caractere na posição "i" for igual ao caractere "ch", a função incrementa o contador "count" em 1.
+
+        - Após iterar por todos os caracteres da string "s", a função retorna o valor do contador "count", que
+        representa o número de ocorrências do caractere "ch" na string "s".
+
+?           Pontos Importantes:
+
+        - Complexidade de Tempo: A função tem complexidade de tempo O(n), onde n é o comprimento da string "s".
+        Isso porque ela percorre todos os caracteres da string de uma vez.
+
+        - Complexidade de Espaço: A função tem complexidade de espaço O(1), pois usa uma quantidade constante de
+        espaço adicional ("count" e variáveis de loop).
+
+        Essa função é útil para contagem de caracteres em strings, como verificar a frenquência de letras,
+    Caracteres especiais ou qualquer outro símbolo em uma dada string.
+
+?           Contar Ocorrências de um Caractere:
+
+        A função countOccurrences conta o número de vezes que um determinado caractere (ch) aparece em uma 
+    string (s).
+
+! ----------------------------------------------------------------------------------------------------------------
+
+?           Converter String para Array de Caracteres:
+
+        A função demonstrada realiza a conversão de uma string (String s) em um array de caracteres (char[] 
+    charArray) e, em seguida, itera sobre cada caractere desse array, imprimindo-os.
+*/
+class CharArrayExample {
+    public static void main(String[] args) {
+        String s = "Hello";
+        char[] charArray = s.toCharArray();
+        for (char c : charArray) {
+            System.out.print(c); // H e l l o
+        }
+    }
+}
+/*
+?           Explicação do Resultado:
+
+    - O método toCharArray() converte a string "Hello" em um array de caracteres {'H', 'e', 'l', 'l', 'o'}.
+
+    - O loop for-each itera sobre cada caractere do array e os imprime um por um.
+
+    - Como System.out.print(c) é utilizado (ao invés de System.out.println(c)), os caracteres são impressos na 
+    mesma linha, resultando na saída contínua de "Hello".Explicação do Resultado
+
+?           Pontos Importantes:
+    - toCharArray(): Este método é útil quando você precisa manipular ou iterar sobre os caracteres individuais 
+    de uma string.
+
+    - for-each Loop: O loop for-each simplifica a iteração sobre arrays e coleções, tornando o código mais 
+    legível.
+
+    - System.out.print() vs System.out.println(): System.out.print() imprime sem adicionar uma nova linha ao 
+    final, enquanto System.out.println() imprime e adiciona uma nova linha.
+
+    Essa técnica é frequentemente utilizada quando é necessário acessar ou processar cada caractere de uma 
+    string de forma independente.
+
+! ------------------------------------------------------------------------------------------------------------------
+    
+?           Formatar Strings:
+
+        A função demonstrada formata uma string com placeholders ("%s" e "%d") preenchidos com valores específicos
+    de variáveis ("name" e "age"), e em seguida, imprime a string formatada.
+ */
+class StringFormatExample {
+    public static void main(String[] args) {
+        String name = "John";
+        int age = 30;
+        String formatted = String.format("Name: %s, Age: %d", name, age);
+        System.out.println(formatted); // Name: John, Age: 30
+    }
+}
+/*
+?           Explicação do Resultado:
+
+        - O método "String.format()" substitui os placeholders "%s" e "%d" pelos valores das variáveis "name" e 
+    "age", respectivamente.
+
+        - A string resultante "Name: John, Age: 30" é então impressa no console.
+
+?           Pontos importantes:
+
+        - String.format(): Este método é uma maneira eficiente e legível de construir strings complexas com
+    variáveis. É especialmente útil quando você precisa construir strings com múltiplos valores dinâmicos.
+
+?           Placeholders:
+
+        - "%s" é utilizado para valores de String.
+
+        - "%d" é utilizado para valores de inteiros.
+
+        - "%f" é utilizado para valores de números de ponto flutuante.
+
+        - "%c" é utilizado para valores de caractere.
+
+        - "%b" é utilizado para valores de booleano.
+
+        - "%x" é utilizado para valores de número hexadecimal.
+
+        - "%o" é utilizado para valores de número octal.
+
+        - "%e" é utilizado para valores de notação cientifica.
+
+        - "%g" é utilizado para converter o valor para o "%f" ou "%e", o que for mais curto.
+
+        - "%h" é utilizado para valores de hash do objeto(retornado pelo método "hashCode()")
+
+        - "%t"  é utilizado para valores de tempo (data/hora). Alguns exemplos abaixo:
+                
+            - %tY: Ano completo
+
+            - %tm: Mês (01 a 12)
+
+            - %td: Dia do mês (01 a 31)
+
+            - %tH: Hora (00 a 23)
+
+            - %tM: Minuto (00 a 59)
+
+            - %tS: Segundo (00 a 59)
+
+            - %tL: Milissegundos (000 a 999)
+
+            - %tB: Nome completo do mês
+
+            - %ta: Abreviação do dia da semana
+
+?           Legibilidade:
+
+        Utilizar "String.format()" torna o código mais legível e fácil de entender, especialmente quando se trata
+    de construir strings complexas.
+
+        Esta técnica é amplamente utilizada para gerar mensagens, logs, e outros tipos de saídas de texto formatado
+    de maneira clara e concisa.
+    
+!               CONCLUSÃO SOBRE A CLASSE STRING
+
+        A classe "String" é uma das classes mais usadas em Java e oferece uma vasta gama de métodos para manipulação
+    e processamento de sequências de caracteres. Sua imutabilidade garante a segurança e consistência dos dados,
+    enquanto seus métodos facilitam operações comuns como busca, substituição, divisão e formatação de strings.
+*/
