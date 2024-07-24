@@ -256,7 +256,7 @@ class Ternario{
     }
 }
 class Relacionais {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 /*
 !                       OPERADORES RELACIONAIS
 
@@ -264,9 +264,85 @@ class Relacionais {
       definem se o operando à esquerda é igual, diferente, menor, menor ou igual, maior ou maior ou igual ao da
       direita, retornando um valor booleano como resultado.
 
-        - ( == ) Quando desejamos verificar se uma variável é IGUAL a outra.
+        - ( == ) Quando desejamos verificar se uma variável é IGUAL A outra.
 
         - ( != ) Quando desejamos verificar se uma variável é DIFERENTE da outra.
+
+        - ( > ) Quando desejamos verificar se uma variável é MAIOR QUE a outra.
+
+        - ( >= ) Quando desejamos verificar se uma variável é MAIOR OU IGUAL a outra.
+
+        - ( < ) Quando desejamos verificar se uma variável é MENOR QUE a outra.
+
+        - ( <= ) Quando desejamos verificar se uma variável é MENOR OU IGUAL a outra.
 */
-        }
+        int numero1 = 2;
+        int numero2 = 2;
+
+        String resultado = numero1 == numero2 ? "Sim, os números são iguais" : "Não, os números não são iguais";
+        System.out.println(resultado);
+
+        resultado = numero1 != numero2 ? "Sim, os números são diferentes" : "Não, os números não são diferentes";
+        System.out.println(resultado);
+
+        resultado = numero1 > numero2 ? "Sim, o número 1 é maior que o número 2" : "Não, o número 1 não é maior que o número 2";
+        System.out.println(resultado);
+
+        resultado = numero1 >= numero2 ? "Sim, o número 1 é maior ou igual ao número 2" : "Não, o número 1 não é maior ou igual ao número 2";
+        System.out.println(resultado);
+
+        resultado = numero1 < numero2 ? "Sim, o número 1 é menor que o número 2" : "Não, o número 1 não é menor que o número 2";
+        System.out.println(resultado);
+
+        resultado = numero1 <= numero2 ? "Sim, o número 1 é menor ou igual ao número 2" : "Não, o número 1 não é menor ou igual ao número 2";
+        System.out.println(resultado);
+
+        // Podemos utilizar os operadores relacionais com outros tipos de Variáveis e Classes. Como no exemplo abaixo:
+
+        String nome1 = "Piter";
+        String nome2 = "Piter";
+
+        String resultadoNomes = nome1 == nome2 ? "Sim, os nomes são iguais" : "Não, os nomes não são iguais";
+        System.out.println(resultadoNomes);
+
+        resultadoNomes = nome1 != nome2 ? "Sim, os nomes são diferentes" : "Não, os nomes não são diferentes";
+        System.out.println(resultadoNomes);
+        
+/*      Porém, quando estivermos falando de objetos ou textos é comum utilizarmos o comando equals para 
+     comparações. Como no exemplo abaixo: 
+*/
+        System.out.println(nome1.equals(nome2)); // Porém ele retornará um valor booleano("true" ou "false").
+    }
+}
+
+class OpreadoresLogicos {
+     public static void main(String[] args) {
+/*
+!                       OPERADORES LÓGICOS
+
+        Os operadores lógicos representam o recurso que nos permite criar expressões lógicas maiores a partir da
+      junção de duas ou mais expressões.
+
+        - ( && ) Operador Lógico " E ".
+
+        - ( || ) Operador Lógico " OU "
+
+?               Exemplos Práticos de Uso Abaixo:
+*/
+        boolean condicao1 = true;
+
+        boolean condicao2 = false;
+
+        String comparandoCondicoes = condicao1 && condicao2 ? "As duas condições, são true" : "Uma das duas ou as duas condições, não são true";
+        System.out.println(comparandoCondicoes);
+
+        comparandoCondicoes = condicao1 || condicao2 ? "Uma das duas ou as duas condições, são true" : "Nenhuma das duas condições, não são true";
+        System.out.println(comparandoCondicoes);
+
+        comparandoCondicoes = condicao1 && (7 > 2) ? "As duas condições, são true" : "Uma das duas ou as duas condições, não são true";
+        System.out.println(comparandoCondicoes);
+
+        comparandoCondicoes = condicao1 || (7 > 2) ? "Uma das duas ou as duas condições, são true" : "Nenhuma das duas condições, não são true";
+        System.out.println(comparandoCondicoes);
+     }
 }
