@@ -63,10 +63,19 @@ public class Metodos {
 */
     Somar somar = new Somar();
     System.out.println(somar.somar(2, 3));
+
+    Imprimir imprimir = new Imprimir();
+    System.out.println(imprimir.imprimir(null));
   }  
 }
 class Somar {
   public double somar(int n1, int n2){
       return n1 + n2;
     }
+}
+class Imprimir{
+  public String imprimir(String texto) {
+    texto = "Teste de impressão";
+    return texto;
+  }
 }
