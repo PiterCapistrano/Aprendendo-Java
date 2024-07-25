@@ -179,6 +179,19 @@ class Imprimir{
   }
 }
 /*
+?     1 - Assinatura do Método:
+
+    - "public": O método é público, o que significa que pode ser acessado de outras classes.
+
+    - "String": O método retorna um valor do tipo "String"(" ").
+
+    - "somar(String texto)": O método se chama "imprimir" e aceita dois parâmetros do tipo "String"(" ").
+
+?     2 - Corpo do Método:
+
+    - "return texto;": O método retorna o parâmetro fornecido.
+ */
+/*
 !       MÉTODO DIVIDIR
 */
 class Dividir {
