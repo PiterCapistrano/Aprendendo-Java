@@ -65,7 +65,15 @@ public class Metodos {
     System.out.println(somar.somar(2, 3));
 
     Imprimir imprimir = new Imprimir();
-    System.out.println(imprimir.imprimir(null));
+    System.out.println(imprimir.imprimir("Teste de impressão!"));
+
+    Dividir dividir = new Dividir();  
+    // Para utilizar um método com "Exception" deve-se utilizar a função "try, catch", para tratar as excessões
+    try{
+    System.out.println(dividir.dividir(10, 5));
+    } catch (Exception e){
+      System.out.println(e.getMessage());
+    }
   }  
 }
 class Somar {
@@ -75,7 +83,15 @@ class Somar {
 }
 class Imprimir{
   public String imprimir(String texto) {
-    texto = "Teste de impressão";
     return texto;
+  }
+}
+class Dividir {
+  public double dividir(int dividendo, int divisor) throws Exception { 
+    // Método com Exception, deve-se utilizar a função "if, else", para tratar as excessões
+    if (dividendo <= 0 || divisor <= 0) {
+      throw new Exception("Nem o dividendo e nem o divisor podem ser iguais ou menores que 0");
+    }
+    return (double) dividendo / divisor;
   }
 }
