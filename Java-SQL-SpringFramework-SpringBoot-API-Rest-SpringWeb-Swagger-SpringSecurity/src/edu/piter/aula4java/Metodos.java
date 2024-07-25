@@ -61,12 +61,19 @@ public class Metodos {
 
   Abaixo, temos um exemplos de uma classe com alguns métodos e suas respectivas considerações:
 */
+/*
+!       UTILIZINANDO O MÉTODO SOMAR NA CLASSE MAIN
+*/
     Somar somar = new Somar();
     System.out.println(somar.somar(2, 3));
-
+/*
+!       UTILIZINANDO O MÉTODO IMPRIMIR NA CLASSE MAIN
+*/
     Imprimir imprimir = new Imprimir();
     System.out.println(imprimir.imprimir("Teste de impressão!"));
-
+/*
+!       UTILIZINANDO O MÉTODO DIVIDIR NA CLASSE MAIN
+*/
     Dividir dividir = new Dividir();  
     // Para utilizar um método com "Exception" deve-se utilizar a função "try, catch", para tratar as excessões
     try{
@@ -74,24 +81,158 @@ public class Metodos {
     } catch (Exception e){
       System.out.println(e.getMessage());
     }
-  }  
+/*
+!       UTILIZINANDO O MÉTODO VALIDAR NA CLASSE MAIN
+*/
+    Validar validar = new Validar();
+    if (validar.validar("Piter", 123456)) {
+      System.out.println("Logando!");
+    } else {
+      System.out.println("Usuário ou senha invalida!");
+    }     
+/*
+!       UTILIZINANDO UM MÉTODO PRIVADO NA CLASSE MAIN
+*/
+    Metodos metodos = new Metodos(); 
+    // Para chamar um método privado devemos criar outro método para acessar os dados do Método
+    System.out.println(metodos.chamarMetodoPrivado());
+/*
+!       UTILIZINANDO UM MÉTODO DE INTÂNCIA NA CLASSE MAIN
+*/    
+    Instancia instancia = new Instancia("Método de Instâcia executado com sucesso!");
+    instancia.printMessage(); 
+
+    /*
+!       UTILIZINANDO UM MÉTODO DE INTÂNCIA NA CLASSE MAIN
+*/   
+    Estatica.printMensagemEstatica();
+
+  }
+/*
+! -----------------------------------------------------------------------------------------------------------
+
+!       MÉTODO PRIVADO
+*/  
+  private void metodoPrivado(){
+    System.out.println("Este método não pode ser visto por outras classes no porjeto!");
+  }
+/*
+!       MÉTODO CRIADO PARA CHAMAR O MÉTODO PRIVADO
+*/
+  public String chamarMetodoPrivado(){ // Método criado para chamar o método privado em uma classe.
+    metodoPrivado();
+    return "Método privado chamado com sucesso.";
+  }
 }
+/*
+! -------------------------------------------------------------------------------------------------------------------------
+*/
+/*
+!       MÉTODO SOMAR
+ */
 class Somar {
   public double somar(int n1, int n2){
       return n1 + n2;
     }
 }
+/*
+?     1 - Assinatura do Método:
+
+    - "public": O método é público, o que significa que pode ser acessado de outras classes.
+ */
+/*
+!       MÉTODO IMPRIMIR
+*/
 class Imprimir{
   public String imprimir(String texto) {
     return texto;
   }
 }
+/*
+!       MÉTODO DIVIDIR
+*/
 class Dividir {
   public double dividir(int dividendo, int divisor) throws Exception { 
-    // Método com Exception, deve-se utilizar a função "if, else", para tratar as excessões
+    // Em métodos com Exception, deve-se utilizar a função "if, else", para tratar as excessões
     if (dividendo <= 0 || divisor <= 0) {
       throw new Exception("Nem o dividendo e nem o divisor podem ser iguais ou menores que 0");
     }
     return (double) dividendo / divisor;
   }
 }
+/*
+!       MÉTODO VALIDAR
+*/
+class Validar{
+  public boolean validar (String login, int senha){
+  return "Piter".equals(login) && senha == 123456;
+  }
+}
+/*
+!       MÉTODO DE INSTÂNCIA
+*/
+class Instancia{
+  private String message;
+
+  public Instancia(String message){
+    this.message = message;
+  }
+  public void printMessage(){
+    System.out.println(message);
+  }
+}
+/*
+!       MÉTODO ESTÁTICOS
+*/
+class Estatica{
+  public static void printMensagemEstatica(){
+    System.out.println("Mensagem do método Estático!");
+  }
+}
+/*
+?     Funcionalidade e Características do método "static":
+
+?    1 - Associação com a Classe e Não com a Instância:
+
+    - Métodos "static" são associados à própria classe, e não a instâncias(objetos) dessa classe.
+    Isso significa que eles podem ser chamados sem criar uma instância da classe.
+
+    - Por exemplo, se temos um método "static" chamado "printMensagemEstatica" na classe "Estatica", podemos
+    chamá-lo diretamente usando "Etatica.printMensagemEstatica();", sem necessidade de criar um objeto da classe
+    "Estatica".
+
+?     2 - Acesso a Membros Estáticos:
+
+    - Métodos "static" só podem acessar outros membros (variáveis e métodos) "static" da mesma classe diretamente.
+    Eles não podem acessar membros de instância (não estáticos) diretamente porque métodos "static" não tem referência
+    a uma instância específica(o "this").
+
+?     3 - Uso Comum:
+
+    - Métodos "static" são frequentemente usados para definir funcionalidades que pertencem à classe como um todo,
+    e não a uma instância específica. Exemplos comuns incluem métodos utilitários (por exemplo, métodos na classe
+    "Math" como "Math.sqrt()") e métodos de fábrica (factory methods) que criam instâncias de objetos.
+
+?     4 - Inicialização Estática:
+
+    - Quando a classe é carregada pela primeira vez, seus métodos "static" e blocos de inicialização "static" são
+    executados. Isso pode ser útil para inicializar recursos compartilhados ou configurar o estado da classe.
+
+?     5 - Sobrescrita e Ocutação:
+
+    - Métodos "static" não poderm ser sobrescritos no mesmo sentido que métodos de instância. Se uma subclasse define
+    um método "static" com a mesma assinatura de um método "static" na superclasse, o método na subclasse oculta
+    (mas não sobrescreve) o método da superclasse.
+
+!       RESUMO
+
+    - Métodos "static" são chamados pela classe e não por instâncias.
+
+    - Eles não podem acessar membros de instância diretamente.
+
+    - São úteis para funcionalidades que não dependem do estado de um objeto específico.
+
+    - São executados quando a classe é carregada.
+
+    - Não podem ser sobrescritos, mas podem ser ocultados em subclasses.
+ */
