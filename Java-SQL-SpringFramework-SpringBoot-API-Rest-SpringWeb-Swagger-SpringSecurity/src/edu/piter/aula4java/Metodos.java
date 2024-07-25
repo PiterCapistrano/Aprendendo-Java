@@ -139,7 +139,37 @@ class Somar {
 ?     1 - Assinatura do Método:
 
     - "public": O método é público, o que significa que pode ser acessado de outras classes.
- */
+
+    - "double": O método retorna um valor do tipo "double"(0.0).
+
+    - "somar(int n1, int n2)": O método se chama "somar" e aceita dois parâmetros do tipo "int"(0).
+
+?     2 - Corpo do Método:
+
+    - "return n1 + n2": O método retorna a soma dos dois parâmetros fornecidos.
+
+?     3 - Descrição da Funcionalidade:
+
+    O método "somar" recebe dois números inteiros como parâmetros, calcula a soma desses números e retorna o 
+  resultado como um valor do tipo "double". Apesar de os parâmetros serem do tipo "int", o resultado é retornado
+  como "double" para garantir maior flexibilidade no uso do método, especialmente em contextos onde o resultado
+  precisa ser tratado como um número de ponto flutuante.
+
+?     4 - Utilizando o Método "somar" no Método "Main":
+
+    Para executarmos o método "somar" no método "main", devemos inserir as seguintes linhas de código dentro do
+  método "main":
+
+    Somar somar = new Somar(); - Cria uma instância da classe "Somar".
+
+    System.out.println(somar.somar(2, 3)); - Chama o método "somar" na isntância "somar", passando os valores "2" e
+    "3" como argumentos. O resultado da soma(5.0) é então impresso no console.
+
+!       RESUMO
+
+    Esse exemplo simples demonstra como métodos podem ser utilizados para encapsular operações e como criar e usar
+  instâncias de classes para chamar esses métodos.
+*/
 /*
 !       MÉTODO IMPRIMIR
 */
