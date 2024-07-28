@@ -88,7 +88,7 @@ public class Metodos {
     if (validar.validar("Piter", 123456)) {
       System.out.println("Logando!");
     } else {
-      System.out.println("Usuário ou senha invalida!");
+      System.out.println("Usuário ou senha inválida!");
     }     
 /*
 !       UTILIZINANDO UM MÉTODO PRIVADO NA CLASSE MAIN
@@ -103,7 +103,7 @@ public class Metodos {
     instancia.printMessage(); 
 
     /*
-!       UTILIZINANDO UM MÉTODO DE INTÂNCIA NA CLASSE MAIN
+!       UTILIZINANDO UM MÉTODO DE ESTÁTICO NA CLASSE MAIN
 */   
     Estatica.printMensagemEstatica();
 
@@ -297,6 +297,62 @@ class Validar{
   }
 }
 /*
+?     1 - Assinatura do Método:
+
+    - "public": O método é público, o que significa que pode ser acessado de outras classes.
+
+    - "boolean": O método retorna um valor do tipo "boolean"(true ou false).
+
+    - "validar(String login, int senha)": O método se chama "validar" e aceita dois parâmetros: um "String"("login")
+    e um "int"("senha").
+
+?     2 - Corpo do Método:
+
+    - "return "Piter".equals(login) && senha == 123456;": O método verifica se o valor de "login" é igual a "Piter"
+    e se a "senha" é igual a "123456". Se ambas as condições forem verdadeiras, o método retorna "true"; caso contrário,
+    "false".
+
+?     3 - Descrição da Funcionalidade:
+
+    O método "validar" realiza uma verificação simples de autentificação. Ele compara o valor do parâmetro "login"
+  com a string "Piter" e o valor do parâmetro "senha" com o número "123456". Se ambas as comparações forem verdadeiras,
+  o método retorna "true", indicando que a autenticação foi bem-sucedida; caso contrário, retorna "false".
+
+?     4 - Corpo do Método Main:
+
+    - "Validar validar = new Validar();": Cria uma instância da classe "Validar".
+
+    - "if (validar.validar("Piter", 123456))": Chama o método "validar" na instância "validar", passando os valores
+  "Piter" e "123456" como argumentos. Se o método retorna "true", executa o bloco de código dentro do "if".
+
+    - "System.out.println("Logando!");": Imprime a mensagem "Logando!" no console se a autenticação for bem-sucedida.
+
+    - "else": Se o método "validar" retorna "false", executa o bloco de código dentro do "else".
+
+    - "System.out.println("Usuário ou senha inválida!");": Imprime a mensagem "Usuário ou senha inválida!" no console
+  se a autenticação falhar.
+
+?     5 - Descrição da Funcionalidade Main:
+
+    - Cria através da linha de código "Validar validar = new Validar();", uma nova instância da classe "Validar".
+    
+    - Usa essa instância para chamar o método "validar", passando os valores "Piter" e "123456" como argumentos.
+
+    - Se o método "validar" retornar "true", imprime a mensagem "Logando!" no console.
+
+    - Se o método "validar" retornar "false", imprime a mensagem "Usuário ou senha inválida!" no console.
+
+?     6 - Resumo e Conclusão:
+
+    - Método "validar": Verifica se o login e a senha fornecidos correspondem aos valores "Piter" e "123456", 
+  respectivamente. Retorna "true" se ambos os valores forem corretos; caso contrário, retorna "false".
+
+    - Método "main": Cria uma instância da classe "Validar", utiliza essa instância para chamar o método "validar"
+  com os valores "Piter" e "123456", e imprime uma mensagem no console com base no resultado da verificação.
+
+    Este exemplo demonstra como utilizar um método de verificação simples para autentificação e como utilizar o
+  resultado dessa verificação para imprimir mensagens apropriadas no console.
+
 !       MÉTODO DE INSTÂNCIA
 */
 class Instancia{
@@ -310,6 +366,15 @@ class Instancia{
   }
 }
 /*
+?      1 - Atributo "message":
+
+    - "private String message;": Um atributo privado que armazena a mensagem a ser impressa. Ele só pode ser
+  acessado e modificado por métodos dentro da classe "Instancia".
+
+?     2 - Construtor "Instancia":
+
+    - "public Instancia(String message)"
+
 !       MÉTODO ESTÁTICOS
 */
 class Estatica{
