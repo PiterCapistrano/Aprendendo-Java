@@ -190,8 +190,26 @@ class Imprimir{
 ?     2 - Corpo do Método:
 
     - "return texto;": O método retorna o parâmetro fornecido.
- */
-/*
+
+?     3 - Descrição da Funcionalidade:
+
+    - Cria uma nova instancia da classe "imprimir" com a linha de código: "Imprimir imprimir = new Imprimir();"
+
+    - Usa essa instância para chamar o método "imprimier", passando a string "Teste de impressão!" como argumento:
+    System.out.println(imprimir.imprimir("Teste de impressão!"));
+    
+    - Imprime o resultado da chamada ao método "imprimir" no console.
+
+?     4 - Resumo e Conclusão
+
+    - Método "imprimir": Rece uma string como parâmetro e retorna a mesma string.
+
+    - No Método "main" : Cria uma instância da classe "Imprimir", utiliza essa instância para chamar o método
+    "imprimir" com a string "Teste de impressão!", e imprime o resultado no console.
+
+    Esse exemplo simples demonstra como métodos podem ser utilizados para retornar valores e como criar e usar
+    instâncias de classes para chamar esses métodos.
+
 !       MÉTODO DIVIDIR
 */
 class Dividir {
@@ -204,6 +222,52 @@ class Dividir {
   }
 }
 /*
+?     1 - Assinatura do Método:
+
+    - "public": O método é público, o que significa que pode ser acessado de outras classes.
+
+    - "double": O método retorna um valor do tipo "doublo".
+
+    - "dividir(int dividendo, int divisor)": O método se chama "dividir" e aceita dois parâmetros do tipo "int".
+
+    - "throws Exception": O método pode lançar uma exceção do tipo "Exception".
+
+?     2 - Corpo do Método Dividir:
+
+?        Tratamento de Exceções:
+
+    - "if (dividendo <= 0 || divisor <= 0)": Verifica se o dividendo ou o divisor são menores ou iguais a zero.
+
+    - "throw new Exception("Nem o dividendo e nem o divisor podem ser iguais ou menores que 0");": Se a condição 
+    for verdadeira, uma exceção é lançada com a mensagem apropriada.
+
+?        Cálculo da Divisão:
+
+    - "return (double) dividendo / divisor;": Se nenhuma exceção for lançada, o método retorna o resultado da 
+    divisão dos dois parâmetros como um valor do tipo "double".
+
+?     3 - Descrição de Funcionalidade:
+
+    O método "dividir" realiza a divisão de dois números inteiros ("dividendo" e "divisor") e retorna o resultado
+  como um "double". Antes de realizar a divisão, ele verifica se algum dos parâmetros é menor ou igual a zero e,
+  caso seja, lança uma exceção com uma mensagem de erro.
+
+?     4 - Corpo do Método Main:
+
+    - "Dividir dividir = new Dividir();": Cria uma instância da classe "Dividir".
+
+?       Bloco "try-catch":
+
+    - "try": Envolve a chamada ao método "dividir" em bloco "try" para capturar possíveis exceções.
+
+    - "System.out.println(dividir.dividir(10, 5));": Chama o método "dividir" na instância "dividir", passando os
+    valores "10" e "5" como argumentos. O resultado da divisão(2) é impresso no console.
+
+    - "catch (Exception e)": Captura qualquer exceção lançada pelo método "dividir".
+
+    - "System.out.println(e.getMessage());": Imprime a mensagem da exceção, descrita na linha de código
+    "throw new Exception("Nem o dividendo e nem o divisor podem ser iguais ou menores que 0");" no console.
+
 !       MÉTODO VALIDAR
 */
 class Validar{
