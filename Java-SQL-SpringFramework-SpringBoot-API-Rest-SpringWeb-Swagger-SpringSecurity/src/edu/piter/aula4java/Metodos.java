@@ -268,6 +268,27 @@ class Dividir {
     - "System.out.println(e.getMessage());": Imprime a mensagem da exceção, descrita na linha de código
     "throw new Exception("Nem o dividendo e nem o divisor podem ser iguais ou menores que 0");" no console.
 
+?     5 - Descrição de Funcionalidade na Classe Main:
+
+    - Cria através da linha de código "Dividir dividir = new Dividir();", uma nova instância da classe "Dividir".
+
+    - Usa essa instância para chamar o método "dividir" dentro de um bloco "try-catch" para capturar e tratar exceções.
+
+    - Se a divisão for bem-sucedida, imprime o resultado da divisão no console.
+    
+    - Se uma exceção for lançada, captura a exceção e imprime a menssagem de erro no console.
+
+?     6 - Resumo e Conclusão:
+
+    - Método "dividir": Calcula e retorna a divisão de dois inteiros como um "double". Lança uma exceção se qualquer
+    um dos parâmetros for menor ou igual a zero.
+
+    - Método "main": Cria uma instância da classe "Dividir", utiliza essa instância para chamar o método "dividir"
+    com tratamento de exceções, e imprime o resultado ou a mensagem de erro no console.
+
+    Este exemplo demonstra como utilizar o tratamento de exceções em métodos que podem lançar exceções e como chamar
+  tais métodos de forma segura usando blocos "try-catch".
+
 !       MÉTODO VALIDAR
 */
 class Validar{
