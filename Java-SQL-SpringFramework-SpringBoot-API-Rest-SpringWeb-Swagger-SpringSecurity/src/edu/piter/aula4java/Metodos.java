@@ -649,5 +649,65 @@ class FinalMethods {
 
 ?     3 - Descrição da Funcionalidade do Método "printMessage":
 
-    
+    O método "printMessage" na classe "FinalMethods" é declarado como "final", o que significa que ele não pode
+  ser sobrescrito por subclasses. Ele imprime a mensagem "Mensagem Final!" no console quendo chamado.
+
+?     4 - Assinatura do Método "main":
+
+    - "public static void main(String[] args)": Este é o ponto de entrada do programa Java.
+    O método "main" é necessário para que a JVM( Java Virtual Machine ) possa executar o programa.
+
+?     5 - Corpo do Método "main":
+
+    - "FinalMethods finalMEthods = new FinalMethods();": Cria uma nova instância da classe "FinalMethods".
+
+    - "finalMethods.printMessage();": Chama o método "printMessage" na instância "finalMethods", o que resulta na 
+  impressão de "Mensagem Final!" no console.
+
+?     6 - Descrição da Funcionalidade do Método "main":
+
+    - Cria uma nova instância da classe "FinalMethods".
+
+    - Usa essa instância para chamar o método "printMessage", que imprime "Mensagem Final!" no console.
+
+?     7 - Resumo e Conclusão:
+
+?       Método "printMessage":
+
+    - É um métdo público e final que imprime "Mensagem Final!" no console.
+
+    - O modificador "final" impede que o método seja sobrescrito por subclasses.
+
+?       Método "main":
+
+    - Cria uma instância de "FinalMethods".
+
+    - Chama o método "printMessage" dessa instância para demonstrar sua funcionalidade, resultando na impressão
+  mensagem no console.
+
+    O exemplo demonstra o uso do modificador "final" em métodos, que impede que o método seja sobrescrito em subclasses.
+  Isso é útil quando você quer garantir que a implementação de um método permaneça a mesma em todas as subclasses
+  e não possar ser alterada. O método "main" mostra como instanciar a classe "FinalMethods" e chamar seu método
+  "printMessage" para exibir a mensagem final no console.
+
+!       MÉTODOS SÍNCRONOS
+*/
+class Sincronos {
+  private int count = 0;
+
+  public synchronized void increment(){
+    count++;
+  }
+  public int getCount() {
+    return count;
+  }
+
+  public static void main(String[] args) {
+    Sincronos sincronos = new Sincronos();
+    sincronos.increment();
+    System.out.println(sincronos.getCount()); // Saída: 1
+  }
+}
+/*
+?     1 - Assinatura do Método "increment":
 */
