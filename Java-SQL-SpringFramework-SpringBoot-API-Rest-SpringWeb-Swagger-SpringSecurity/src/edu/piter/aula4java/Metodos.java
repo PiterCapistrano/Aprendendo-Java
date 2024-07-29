@@ -597,4 +597,25 @@ class Dog extends Animal {
 
     - "dog.makeSound();": Chama o método "makeSound" na instância "dog", o que resulta na impressão de "Bark" no
   console.
+
+?     6 - Descrição da Funcionalidade da Classe "Dog":
+
+    A classe "Dog" implementa o método abstrato "makeSound" da classe "Animal". A implementação de "makeSound" em
+  "Dog" imprime "Bark" no console, fornecendo a especificação concreta do som que um cão faz.
+
+?     7 - Resumo e Conclusão:
+
+    - Classe Abstrata "Animal": Define um método abstrato "makeSound" que deve ser implementado por qualquer classe
+  concreta que estenda "Animal".
+
+    - Classe Concreta "Dog": Estende "Animal" e fornece uma implementação concreta para o método "makeSound", que
+  imprime "Bark" no console.
+
+    - Método "main": Cria uma instância de "Dog" e chama "makeSound", demonstrando a implementação específica de
+  "Dog" para o método abstrato "makeSound".
+
+    Este exemplo ilustra o conceito de herança e polimorfismo na programação orientada a objetos. A classe abstrata
+  "Animal" estabelece um contrato para suas subclasses através do método abstrato "makeSound". A classe "Dog" implementa
+  esse contrato fornecendo sua própria versão de "makeSound", permitindo que diferentes subclasses de "Animal"
+  forneçam implementações específicas para suas necessidades.
 */  
