@@ -125,6 +125,19 @@ public class Metodos {
   }
 }
 /*
+?     1 - Assinatura do Método:
+
+    - "private": O método é privado, o que significa que só pode ser acessado dentro da própria classe "Metodos".
+
+    - "void": O método não retorna nenhum valor.
+
+    - "metodoPrivado()": O método não aceita nenhum parâmetro.
+
+?     2 - Corpo do Método:
+
+    - "System.out.println("Este método não pode ser visto por outras classes no projeto!");": Imprime a mensagem
+  no console.
+
 ! -------------------------------------------------------------------------------------------------------------------------
 */
 /*
@@ -165,7 +178,7 @@ class Somar {
     System.out.println(somar.somar(2, 3)); - Chama o método "somar" na isntância "somar", passando os valores "2" e
     "3" como argumentos. O resultado da soma(5.0) é então impresso no console.
 
-!       RESUMO
+?     5 - Resumo e Conclusão
 
     Esse exemplo simples demonstra como métodos podem ser utilizados para encapsular operações e como criar e usar
   instâncias de classes para chamar esses métodos.
@@ -200,7 +213,7 @@ class Imprimir{
     
     - Imprime o resultado da chamada ao método "imprimir" no console.
 
-?     4 - Resumo e Conclusão
+?     4 - Resumo e Conclusão:
 
     - Método "imprimir": Rece uma string como parâmetro e retorna a mesma string.
 
@@ -373,7 +386,48 @@ class Instancia{
 
 ?     2 - Construtor "Instancia":
 
-    - "public Instancia(String message)"
+    - "public Instancia(String message)": Um construtor que aceita uma string como parâmetro e inicializa o atributo
+  "message" com esse valor.
+
+    - "this.message = message;": Atribui o valor do parâmetro "message" ao atributo "message" da instância.
+
+?     3 - Método "printMessage":
+
+    - "public void printMessage()": Um método público que não retorna nenhum valor ("void").
+
+    - "System.out.println(message);": Imprime o valor do atributo "message" no console.
+
+?     4 - Descrição da Funcionalidade:
+
+    A classe "Instancia" possui um atributo "message" para armazenar uma mensagem, um construtor para inicializar
+  esse atributo, e um método "printMessage" para imprimir a mensagem no console.
+
+?     5 - Corpo do Método Main:
+
+    - "Instanci instancia = new Instancia("Método de Instância executado com sucesso!");": Cria uma nova instância
+  da classe "Instancia", passando a string "Método de Instância executado com sucesso!" como argumento para o construtor.
+  Isso inicializa o atributo "message" da instância com esse valor.
+
+    - "instanci.printMessage();": Chama o método "printMessage" na instância "instancia", que imprime o valor do 
+  atributo "message" no console.
+
+?     6 - Descrição da Funcionalidade Main:
+
+    - Cria uma nova instância da classe "Instância", inicializando o atributo "message" com a string "Método de
+  Instância executado com sucesso!".
+
+    - Usa essa instância para chamar o método "printMessage", que imprime a mensagem "Método de Instância executado
+  com sucesso!" no console.
+
+?     7 - Resumo e Conclusão:
+
+    - Método "printMessage": Imprime o valor do atributo "message" no console.
+
+    - Método "main": Cria uma instância da classe "Instancia" com uma mensagem especifica, e chama o método 
+  "printMessage" dessa instância para imprimir a mensagem no console.
+  
+    Este exemplo demonstra como utilizar um construtor para inicializar atributos de uma classe e como métodos de
+  instância podem ser utilizados para realizar ações com esses atributos.
 
 !       MÉTODO ESTÁTICOS
 */
@@ -417,7 +471,7 @@ class Estatica{
     um método "static" com a mesma assinatura de um método "static" na superclasse, o método na subclasse oculta
     (mas não sobrescreve) o método da superclasse.
 
-!       RESUMO
+?     6 - Resumo e Conclusão:
 
     - Métodos "static" são chamados pela classe e não por instâncias.
 
