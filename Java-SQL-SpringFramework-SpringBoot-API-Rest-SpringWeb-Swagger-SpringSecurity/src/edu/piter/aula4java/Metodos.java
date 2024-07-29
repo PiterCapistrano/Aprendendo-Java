@@ -125,7 +125,7 @@ public class Metodos {
   }
 }
 /*
-?     1 - Assinatura do Método:
+?     1 - Assinatura do Método "metodoPrivado":
 
     - "private": O método é privado, o que significa que só pode ser acessado dentro da própria classe "Metodos".
 
@@ -133,14 +133,73 @@ public class Metodos {
 
     - "metodoPrivado()": O método não aceita nenhum parâmetro.
 
-?     2 - Corpo do Método:
+?     2 - Corpo do Método "metodoPrivado":
 
     - "System.out.println("Este método não pode ser visto por outras classes no projeto!");": Imprime a mensagem
   no console.
 
+?     3 - Descrição da Funcionalidade do Método "metodoPrivado":
+
+    O método "metodoPrivado" imprime uma mensagem no console. Como é um método privado, ele não pode ser chamado 
+  diretamente de fora da classe "Metodos".
+  
+?     4 - Assinatura do Método "chamarMetodoPrivado":
+
+    - "public": O método é público, o que significa que pode ser acessado de outras classes.
+
+    - "String": O método retorna um valor do tipo "String".
+
+    - "chamarMetodoPrivado()": O método não aceita nenhum parâmetro.
+
+?     5 - Corpo do Método "chamarMetodoPrivado":
+
+    - "metodoPRivado();": Chama o método privado "metodoPrivado" dentro da própria classe.
+
+    - "return "Método privado chamado com sucesso.";": Retorna uma string indicando que o método privado foi
+  chamado com sucesso.
+  
+?     6 - Descrição de Funcionalidade do Método "chamarMetodoPrivado":
+
+    O método "chamarMetodoPrivado" chama o método "metodoPrivado" e depois retorna uma mensagem indicando que o
+  método privado foi chamado com sucesso. Este método permite que o "metodoPrivado" seja acessado indiretamente
+  de fora da classe "Metodos".
+
+?     7 - Corpo do Método "main"
+
+    - "Metodos metodos = new Metodos();": Cria uma nova instância da classe "Metodos".
+
+    - "System.out.println(metodos.chamarMetodoPrivado());": Chama o método "chamarMetodoPrivado" na isntância
+  "métodos" e imprime a string retornada no console.
+
+?     8 - Descrição da Funcionalidade do Método "main":
+
+    - Cria uma nova instância da classe "Metodos".
+
+    - Usa essa instância para chamar o método "chamarMetodoPrivado", que por sua vez chama o método "metodoPrivado".
+
+    - Imprime a mensagem retornada pelo método "chamarMetodoPrivado" no console, indicando que o método privado foi
+  chamado com sucesso.
+
+?     9 - Resumo e Conclusão
+
+    - Método "metodoPrivado": Um método privado que imprime uma mensagem no console. Ele não pode ser chamado 
+  diretamente de fora da classe "Métodos".
+     Atributos privados são uma prática essencial em programação orientada a objetos para garantir a integridade 
+  e segurança dos dados, promover o encapsulamento e facilitar a manutenção do código. Eles permitem que os 
+  desenvolvedores controlem como os dados são acessados e modificados através de métodos públicos, garantindo 
+  uma interface consistente e segura para a classe.
+
+    - Método "chamarMetodoPrivado": Um método público que chama o método "metodoPrivado" e retorna uma mensagem
+  indicando que o método privado foi chamado com sucesso. Ele permite que o método privado seja acessado indiretamente.
+
+    - Método "main": Cria uma instância da classe "Metodos", chama o método "chamarMetodoPrivado" e imprime a mensagem
+  retornada, demonstrando como acessar um método privado indiretamente.
+
+    Este exemplo ilustra a utilização de métodos públicos para acessar métodos privados, garantindo a encapsulação
+  e proteção dos dados e funcionalidades internas da classe.
+
 ! -------------------------------------------------------------------------------------------------------------------------
-*/
-/*
+
 !       MÉTODO SOMAR
  */
 class Somar {
@@ -149,7 +208,7 @@ class Somar {
     }
 }
 /*
-?     1 - Assinatura do Método:
+?     1 - Assinatura do Método "somar":
 
     - "public": O método é público, o que significa que pode ser acessado de outras classes.
 
@@ -157,11 +216,11 @@ class Somar {
 
     - "somar(int n1, int n2)": O método se chama "somar" e aceita dois parâmetros do tipo "int"(0).
 
-?     2 - Corpo do Método:
+?     2 - Corpo do Método "somar":
 
     - "return n1 + n2": O método retorna a soma dos dois parâmetros fornecidos.
 
-?     3 - Descrição da Funcionalidade:
+?     3 - Descrição da Funcionalidade do Método "somar":
 
     O método "somar" recebe dois números inteiros como parâmetros, calcula a soma desses números e retorna o 
   resultado como um valor do tipo "double". Apesar de os parâmetros serem do tipo "int", o resultado é retornado
@@ -182,8 +241,7 @@ class Somar {
 
     Esse exemplo simples demonstra como métodos podem ser utilizados para encapsular operações e como criar e usar
   instâncias de classes para chamar esses métodos.
-*/
-/*
+
 !       MÉTODO IMPRIMIR
 */
 class Imprimir{
@@ -192,7 +250,7 @@ class Imprimir{
   }
 }
 /*
-?     1 - Assinatura do Método:
+?     1 - Assinatura do Método "imprimir":
 
     - "public": O método é público, o que significa que pode ser acessado de outras classes.
 
@@ -200,11 +258,11 @@ class Imprimir{
 
     - "somar(String texto)": O método se chama "imprimir" e aceita dois parâmetros do tipo "String"(" ").
 
-?     2 - Corpo do Método:
+?     2 - Corpo do Método "imprimir":
 
     - "return texto;": O método retorna o parâmetro fornecido.
 
-?     3 - Descrição da Funcionalidade:
+?     3 - Descrição da Funcionalidade do Método "imprimir":
 
     - Cria uma nova instancia da classe "imprimir" com a linha de código: "Imprimir imprimir = new Imprimir();"
 
@@ -235,7 +293,7 @@ class Dividir {
   }
 }
 /*
-?     1 - Assinatura do Método:
+?     1 - Assinatura do Método "dividir":
 
     - "public": O método é público, o que significa que pode ser acessado de outras classes.
 
@@ -245,7 +303,7 @@ class Dividir {
 
     - "throws Exception": O método pode lançar uma exceção do tipo "Exception".
 
-?     2 - Corpo do Método Dividir:
+?     2 - Corpo do Método "dividir":
 
 ?        Tratamento de Exceções:
 
@@ -259,13 +317,13 @@ class Dividir {
     - "return (double) dividendo / divisor;": Se nenhuma exceção for lançada, o método retorna o resultado da 
     divisão dos dois parâmetros como um valor do tipo "double".
 
-?     3 - Descrição de Funcionalidade:
+?     3 - Descrição de Funcionalidade do Método "dividir":
 
     O método "dividir" realiza a divisão de dois números inteiros ("dividendo" e "divisor") e retorna o resultado
   como um "double". Antes de realizar a divisão, ele verifica se algum dos parâmetros é menor ou igual a zero e,
   caso seja, lança uma exceção com uma mensagem de erro.
 
-?     4 - Corpo do Método Main:
+?     4 - Corpo do Método "main":
 
     - "Dividir dividir = new Dividir();": Cria uma instância da classe "Dividir".
 
@@ -281,7 +339,7 @@ class Dividir {
     - "System.out.println(e.getMessage());": Imprime a mensagem da exceção, descrita na linha de código
     "throw new Exception("Nem o dividendo e nem o divisor podem ser iguais ou menores que 0");" no console.
 
-?     5 - Descrição de Funcionalidade na Classe Main:
+?     5 - Descrição de Funcionalidade na Classe "Main":
 
     - Cria através da linha de código "Dividir dividir = new Dividir();", uma nova instância da classe "Dividir".
 
@@ -310,7 +368,7 @@ class Validar{
   }
 }
 /*
-?     1 - Assinatura do Método:
+?     1 - Assinatura do Método "validar":
 
     - "public": O método é público, o que significa que pode ser acessado de outras classes.
 
@@ -319,19 +377,19 @@ class Validar{
     - "validar(String login, int senha)": O método se chama "validar" e aceita dois parâmetros: um "String"("login")
     e um "int"("senha").
 
-?     2 - Corpo do Método:
+?     2 - Corpo do Método "validar":
 
     - "return "Piter".equals(login) && senha == 123456;": O método verifica se o valor de "login" é igual a "Piter"
     e se a "senha" é igual a "123456". Se ambas as condições forem verdadeiras, o método retorna "true"; caso contrário,
     "false".
 
-?     3 - Descrição da Funcionalidade:
+?     3 - Descrição da Funcionalidade do Método "validar":
 
     O método "validar" realiza uma verificação simples de autentificação. Ele compara o valor do parâmetro "login"
   com a string "Piter" e o valor do parâmetro "senha" com o número "123456". Se ambas as comparações forem verdadeiras,
   o método retorna "true", indicando que a autenticação foi bem-sucedida; caso contrário, retorna "false".
 
-?     4 - Corpo do Método Main:
+?     4 - Corpo do Método "main":
 
     - "Validar validar = new Validar();": Cria uma instância da classe "Validar".
 
@@ -345,7 +403,7 @@ class Validar{
     - "System.out.println("Usuário ou senha inválida!");": Imprime a mensagem "Usuário ou senha inválida!" no console
   se a autenticação falhar.
 
-?     5 - Descrição da Funcionalidade Main:
+?     5 - Descrição da Funcionalidade do Método "main":
 
     - Cria através da linha de código "Validar validar = new Validar();", uma nova instância da classe "Validar".
     
@@ -383,6 +441,10 @@ class Instancia{
 
     - "private String message;": Um atributo privado que armazena a mensagem a ser impressa. Ele só pode ser
   acessado e modificado por métodos dentro da classe "Instancia".
+    Atributos privados são uma prática essencial em programação orientada a objetos para garantir a integridade 
+  e segurança dos dados, promover o encapsulamento e facilitar a manutenção do código. Eles permitem que os 
+  desenvolvedores controlem como os dados são acessados e modificados através de métodos públicos, garantindo 
+  uma interface consistente e segura para a classe.
 
 ?     2 - Construtor "Instancia":
 
@@ -397,12 +459,12 @@ class Instancia{
 
     - "System.out.println(message);": Imprime o valor do atributo "message" no console.
 
-?     4 - Descrição da Funcionalidade:
+?     4 - Descrição da Funcionalidade da Classe "Instancia":
 
     A classe "Instancia" possui um atributo "message" para armazenar uma mensagem, um construtor para inicializar
   esse atributo, e um método "printMessage" para imprimir a mensagem no console.
 
-?     5 - Corpo do Método Main:
+?     5 - Corpo do Método "main":
 
     - "Instanci instancia = new Instancia("Método de Instância executado com sucesso!");": Cria uma nova instância
   da classe "Instancia", passando a string "Método de Instância executado com sucesso!" como argumento para o construtor.
@@ -411,7 +473,7 @@ class Instancia{
     - "instanci.printMessage();": Chama o método "printMessage" na instância "instancia", que imprime o valor do 
   atributo "message" no console.
 
-?     6 - Descrição da Funcionalidade Main:
+?     6 - Descrição da Funcionalidade da Classe "Main":
 
     - Cria uma nova instância da classe "Instância", inicializando o atributo "message" com a string "Método de
   Instância executado com sucesso!".
