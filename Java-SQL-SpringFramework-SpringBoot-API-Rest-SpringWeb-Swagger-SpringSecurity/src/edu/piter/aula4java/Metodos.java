@@ -618,4 +618,36 @@ class Dog extends Animal {
   "Animal" estabelece um contrato para suas subclasses através do método abstrato "makeSound". A classe "Dog" implementa
   esse contrato fornecendo sua própria versão de "makeSound", permitindo que diferentes subclasses de "Animal"
   forneçam implementações específicas para suas necessidades.
+
+!       MÉTODOS FINAL  
 */  
+class FinalMethods {
+  public final void printMessage() {
+    System.out.println("Mensagem Final!");
+  }
+
+  public static void main(String[] args) {
+    FinalMethods finalMethods = new FinalMethods();
+    finalMethods.printMessage(); // Saída: Mensagem Final!
+  }
+}
+/*
+?     1 - Assinatura do Método "printMessage":
+
+    - "public": O método é público, o que significa que pode ser acessado de outras classes.
+
+    - "final": O modificador "final" indica que este método não pode ser sobrescrito por subclasses. Ou seja,
+  se uma classe herdar "FinalMethods", ela não poderá fornecer sua própria implementação para o método "printMessage".
+
+    - "void": O método não retorna nenhum valor.
+
+    - "printMessage()": O método não aceita nenhum parâmetro.
+
+?     2 - Corpo do Método "printMessage":
+
+    - "System.out.println("Mensagem Final!");": Imprime a mensagem "Mensagem Final!" no console.
+
+?     3 - Descrição da Funcionalidade do Método "printMessage":
+
+    
+*/
