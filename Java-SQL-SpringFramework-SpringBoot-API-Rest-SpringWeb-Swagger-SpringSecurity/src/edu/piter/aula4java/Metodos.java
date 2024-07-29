@@ -544,4 +544,57 @@ class Estatica{
     - São executados quando a classe é carregada.
 
     - Não podem ser sobrescritos, mas podem ser ocultados em subclasses.
+
+!       MÉTODOS ABSTRATOS
  */
+abstract class Animal {
+  abstract void makeSound();
+}
+
+class Dog extends Animal {
+  void makeSound() {
+    System.out.println("Bark");
+  }
+
+  public static void main(String[] args) {
+    Dog dog = new Dog();
+    dog.makeSound(); // Saída: Bark
+  }
+}
+/*
+?     1 - Classe Abstrata "Animal":
+
+    - "abstract class Animal": A classe "Animal" é declarada como abstrata. Uma classe abstrata não pode ser
+  instanciada diretamente; ela serve como uma classe base para outras classes.
+
+    - "abstract void makeSound()": O método "makeSound", é declarado como abstrato. Isso significa que ele não
+  possui uma implementação na classe "Animal" e deve ser implementado por qualquer classe concreta que estenda 
+  "Animal".
+
+?     2 - Descrição da Funcionalidade da Classe "Animal":
+
+    A classe "Animal" define um método abstrato "makeSound", que deve ser implementado por qualquer classe que
+  estenda "Animal". Isso estabelece um contrato que todas as subclasse de "Animal" devem seguir, garantindo que
+  cada uma delas forneça uma implementação especifica do método "makeSound".
+
+?     3 - Classe "Dog":
+
+    - "class Dog extends Animal": A classe "Dog" estende a classe abstrata "Animal", o que significa que "Dog"
+  herda as propriedades e métodos abstratos definidos em "Animal".
+
+?     4 - Método "makeSound":
+
+    - "void makeSound()": Este método é a implementação concreta do método abstrato "makeSound" definido na classe
+  "Animal".
+
+    - "System.out.println("Bark");": Quando chamado, o método imprime "Bark" no console.
+
+?     5 - Método "main":
+
+    - "public static void main(String[] args)": O ponto de entrada do programa.
+
+    - "Dog dog = new Dog();": Cria uma nova instância da classe "Dog".
+
+    - "dog.makeSound();": Chama o método "makeSound" na instância "dog", o que resulta na impressão de "Bark" no
+  console.
+*/  
