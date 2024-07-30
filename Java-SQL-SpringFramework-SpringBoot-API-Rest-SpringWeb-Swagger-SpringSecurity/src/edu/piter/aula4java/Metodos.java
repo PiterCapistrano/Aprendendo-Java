@@ -809,4 +809,9 @@ class Constructor {
 }
 /*
 ?     1 - Assinatura do Construtor:
+
+    - "public Constructor(String message)": Este é o construtor da classe "Constructor", que é chamado quando uma
+  nova instância da classe é criada.
+
+?     2 - Corpo do Construtor:
 */
