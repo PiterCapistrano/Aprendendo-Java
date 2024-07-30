@@ -710,4 +710,11 @@ class Sincronos {
 }
 /*
 ?     1 - Assinatura do Método "increment":
+
+    - "public synchronized void increment()": O método é público e "synchronized", o que significa que apenas 
+  um thread pode executar este método por vez.
+
+    - "void": O método não retorna nenhum valor.
+
+?     2 - Corpo do Método "increment":
 */
