@@ -717,4 +717,10 @@ class Sincronos {
     - "void": O método não retorna nenhum valor.
 
 ?     2 - Corpo do Método "increment":
+
+    - "count++;": Incrementa o valor do atributo "count" em 1.
+
+?     3 - Descição de Funcionalidade do Método "increment":
+
+    O método
 */
