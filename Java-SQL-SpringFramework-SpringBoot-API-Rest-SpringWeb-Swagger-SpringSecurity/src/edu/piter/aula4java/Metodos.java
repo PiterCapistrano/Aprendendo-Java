@@ -814,4 +814,12 @@ class Constructor {
   nova instância da classe é criada.
 
 ?     2 - Corpo do Construtor:
+
+    - "this.message = message;": Atribui o valor do parâmetro "message" ao campo de instância "message".
+
+?     3 - Descrição da Funcionalidade do Construtor:
+
+    O construtor da classe "Constructor" inicializa o campo "message" com o valor fornecido como argumento ao criar
+  uma nova instância da classe. Isso permite que cada instância da classe "Constructor" tenha seu próprio valor de
+  "message".
 */
