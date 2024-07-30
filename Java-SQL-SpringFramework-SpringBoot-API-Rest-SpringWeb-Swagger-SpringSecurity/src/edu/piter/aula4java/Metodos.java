@@ -722,5 +722,91 @@ class Sincronos {
 
 ?     3 - Descição de Funcionalidade do Método "increment":
 
-    O método
+    O método "increment" aumenta o valor do atributo "count" em 1. O modificador "synchronized" garante que o método
+  só possa ser executado por um thread de cada vez, evitando problemas de concorrência em um ambiente multithread.
+
+?     4 - Assinatura do Método "getCount":
+
+    - "public int getCount()": O método é público e retorna um valor do tipo "int".
+
+?     5 - Corpo do Método "getCount":
+
+    - "return count;": Retorna o valor atual do atributo "count".
+
+?     6 - Descrição da Funcionalidade do Método "getCount":
+
+    O método "getCount" retorna o valor atual do atributo "count", permitindo que outros métodos ou classes acessem
+  o valor de "count".
+
+?     7 - Assinatura do Método "main":
+
+    - "public static void main(String[] args)": Este é o ponto de entrada do programa Java. O método "main" é 
+  necessário para que a JVM ( Java Virtual Machine ) possa executar o programa.
+
+?     8 - Corpo do Método "main":
+
+    - "Sincronos sincronos = new Sincronos();": Cria uma nova instância da classe "Sincronos".
+
+    - "sincronos.increment();": Chama o método "increment" na instância "sincronos", incrementando o valor de 
+  "count" em 1.
+
+    - "System.out.println(sincronos.getCount());": Chama o método "getCount" na instância "sincronos" e imprime o
+  valor retornando no console, que será 1.
+
+?     9 - Descrição da Funcionalidade do Método "main":
+
+    - Cria uma instância da classe "Sincronos".
+
+    - Chama o método "increment" para aumentar o valor de "count" em 1.
+
+    - Chama o método "getCount" para obter o valor atual de "count" e imprime esse valor no console, resultando
+  na saída "1".
+
+?     10 - Resumo e Conclusão:
+
+?       Método "increment":
+
+    - É um método público e "synchronized" que incrementa o valor do atributo "count" em 1.
+
+    - O modificador "synchronized" garante que apenas um thread possa executar o método por vez, prevenindo 
+  problemas de concorrência.
+
+?       Método "getCount":
+
+    - É um método público que retorna o valor atual do atributo "count".
+
+?       Método "main":
+
+    - Cria uma instância da classe "Sincronos".
+
+    - Chama o método "increment" para incrementar o valor de "count".
+
+    - Chama o método "getCount" para obter e imprimir o valor de "count", mostrando que ele foi incrementado 
+  corretamente.
+
+    A classe "Sincronos" demonstra o uso de métodos sincronizados para garantir a segurança em um ambiente multithread.
+  O método "increment" incrementa o contador de forma segura, e o método "getCount" permite acessar o valor atual
+  do contador. O método "main" mostra como usar esses métodos para manipular e acessar o valor do contador.
+
+!       MÉTODOS CONSTRUTORES
+*/
+
+class Constructor {
+  private String message;
+
+  public Constructor(String message) {
+    this.message = message;
+  }
+
+  public void printMessageConstructor(){
+    System.out.println(message);
+  }
+
+  public static void main(String[] args) {
+    Constructor constructor = new Constructor("Mensagem do Método Construtor!");
+    constructor.printMessageConstructor(); // Saída: Mensagem do Método Construtor!
+  }
+}
+/*
+?     1 - Assinatura do Construtor:
 */
