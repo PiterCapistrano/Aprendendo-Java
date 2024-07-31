@@ -901,5 +901,28 @@ class GetterSetter{
 /*
 ?     1 - Assinatura do Método "getMessage":
 
-    - 
+    - "public String getMessage()": O método é público e retorna um valor do tipo "String".
+
+?     2 - Corpo do Método "getMessage":
+
+    - "return message;": Retorna o valor atual do campo "message".
+
+?     3 - Descrição da Funcionalidade do Método "getMessage":
+
+    O método "getMessage" é um método de acesso (getter) que retorna o valor atual do campo "message". Ele permite
+  que outras partes do programa obtenham o valor de "message".
+
+
+?     4 - Assinatura do Método "setMessage":
+
+    - "public void setMessage(String message)": O método é público e não retorna nenhum valor(void).
+
+?     5 - Corpo do Método "setMessage":
+
+   - "this.message = message;": Atribui o valor do parâmetro "message" ao campo de instância "message".
+
+?     6 - Descrição da Funcionalidade do Método "setMessage":
+
+    O método "setMessage" é um método modificador (setter) que define o valor do campo "message". Ele permite que
+  outras partes do programa modifiquem o valor de "message".
 */
