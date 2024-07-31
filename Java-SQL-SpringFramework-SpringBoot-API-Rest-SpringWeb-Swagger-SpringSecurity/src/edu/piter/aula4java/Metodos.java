@@ -822,4 +822,17 @@ class Constructor {
     O construtor da classe "Constructor" inicializa o campo "message" com o valor fornecido como argumento ao criar
   uma nova instância da classe. Isso permite que cada instância da classe "Constructor" tenha seu próprio valor de
   "message".
+
+?     4 - Assinatura do Método "printMessageConstructor":
+
+    - "public void printMessageConstructor()": O método é público e não retorna nenhum valor(void).
+
+?     5 - Corpo do Método "printMessageConstructor":
+
+    - "System.out.println(message);": Imprime o valor do campo "message" no console.
+
+?     6 - Descrição da Funcionalidade do Método "printMessageConstructor":
+
+    O método "printMessageConstructor" imprime a mensagem armazenada no campo "message" no console. Este método
+  permite que a mensagem passada ao construtor seja exibida quando o método é chamado.
 */
