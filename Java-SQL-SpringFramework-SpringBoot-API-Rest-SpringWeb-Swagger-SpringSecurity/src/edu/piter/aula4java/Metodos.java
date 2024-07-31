@@ -835,4 +835,66 @@ class Constructor {
 
     O método "printMessageConstructor" imprime a mensagem armazenada no campo "message" no console. Este método
   permite que a mensagem passada ao construtor seja exibida quando o método é chamado.
+
+?     7 - Assinatura do Método "main":
+
+    - "public static voin main(String[] args)": Este é o ponto de entrada do programa Java. O método "main" é 
+  necessário para que a JVM ( Java Virtual Machine ) possa executar o programa.
+
+?     8 - Corpo do do Método "main":
+
+    - "Constructor constructor = new Constructor("Mensagem do Método Construtor!");": Cria uma nova instância de
+  classe "Constructor", passando a mensagem "Mensagem do Método Construtor!" para o construtor.
+  
+    - "constructor.printMessageConstructor();": Chama o método "printMessageConstructor" na instância "constructor",
+  o que resulta na impressão da mensagem no console.
+
+?     9 - Descrição da Funcionalidade do Método "main":
+
+    - Cria uma nova instância da classe "Constructor", inicializando o campo "message" com a string "Mensagem do
+  Método Construtor!".
+
+    - Chama o método "printMessageConstructor" para imprimir a mensagem armazenada no campo "message" no console.
+
+?     10 - Resumo e Conclusão:
+
+?       Construtor "Constructor(String message)":
+
+    - Inicializa o campo "message" com o valor passado como argumento ao criar uma nova instância da classe.
+
+?       Método "printMessageConstructor":
+
+    - Imprime a mensagem armazenada no campo "message" no console.
+
+?       Método "main":
+
+    - Cria uma instância da classe "Constructor" com a mensagem "Mensagem do Método Construtor!".
+
+    - Chama o método "printMessageConstructor" para exibir a mensagem no console.
+
+?       Funcionalidade Geral
+
+    A classe "Constructor" demonstra como usar um construtor para inicializar um campo de instância com um valor
+  fornecido no momento da criação do objeto. O método "printMessageConstructor" permite imprimir esse valor no
+  console. O método "main" ilustra a criação de um objeto da classe "Constructor" e a chamado do método
+  "printMessageConstructor" para exibir a mensagem inicializada.
+
+!       MÉTODO GETTER E SETTER
 */
+class GetterSetter{
+  private String message;
+  
+  public String getMessage(){
+    return message;
+  }
+
+  public void setMessage(String message){
+    this.message = message;
+  }
+
+  public static void main(String[] args) {
+    GetterSetter getterSetter = new GetterSetter();
+    getterSetter.setMessage("Mensagem do Método Getter e Setter!");
+    System.out.println(getterSetter.getMessage()); // Saída: Mensagem do Método Getter e Setter!
+  }
+}
