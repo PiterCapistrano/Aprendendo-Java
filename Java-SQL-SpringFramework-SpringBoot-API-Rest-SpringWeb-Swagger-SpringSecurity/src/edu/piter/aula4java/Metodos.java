@@ -898,3 +898,8 @@ class GetterSetter{
     System.out.println(getterSetter.getMessage()); // Saída: Mensagem do Método Getter e Setter!
   }
 }
+/*
+?     1 - Assinatura do Método "getMessage":
+
+    - 
+*/
