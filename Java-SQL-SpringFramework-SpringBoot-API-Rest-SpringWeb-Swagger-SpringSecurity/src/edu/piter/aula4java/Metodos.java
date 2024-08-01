@@ -973,4 +973,22 @@ class GetterSetter{
   manipular o valor de um campo privado. O método "getMessage" permite obter o valor do campo "message", enquanto
   o método "setMessage" permite definir o valor desse campo. O método "main" ilustra como criar uma instância da
   classe, definir o valor do campo "message" usando o setter, e obter e imprimir esse valor usando o getter.
+
+!       MÉTODOS COM PARÂMETROS VARIÁVEIS
+*/
+class Variaveis {
+  public void printMessage(String... messages){
+    for(String message : messages){
+      System.out.println(message);
+    }
+  }
+  public static void main(String[] args) {
+    Variaveis variaveis = new Variaveis();
+    variaveis.printMessage("Mensagens", "dos", "Métodos", "com", "Parâmetros", "Variáveis");
+  }
+}
+/*
+?     1 - Assinatura do Método "printMessage":
+
+
 */
