@@ -935,5 +935,21 @@ class GetterSetter{
 
     - "GetterSetter getterSetter = new GetterSetter();": Cria uma nova instância da classe "GetterSetter".
 
-    - "getterSetter.setMessage("Mensagem do Método Getter e Setter!");":
+    - "getterSetter.setMessage("Mensagem do Método Getter e Setter!");": Chama o método "setMessage" na instância
+  "getterSetter", definindo o valor de "message" para "Mensagem do Método Getter e Setter!".
+
+    - "System.out.println(getterSetter.getMessage());": Chama o método "getMessage" na instância "getterSetter" e 
+  imprime o valor retornado no console, que será "Mensagem do Método Getter e Setter!".
+
+?     9 - Descrição da Funcionalidade do Método "main":
+
+    O método "main" na classe "GetterSetter" faz o seguinte:
+
+    - Cria uma nova instância da classe "GetterSetter".
+
+    - Chama o método "setMessage" para definir o valor do campo "message".
+
+    - Chama o método "getMessage" para obter o valor atual do campo "message" e imprime esse valor no console.
+
+
 */
