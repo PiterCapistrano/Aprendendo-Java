@@ -951,5 +951,26 @@ class GetterSetter{
 
     - Chama o método "getMessage" para obter o valor atual do campo "message" e imprime esse valor no console.
 
+?     10 - Resumo e Conclusão:
 
+?       Método "getMessage":
+
+    - Retorna o valor atual do campo "message".
+
+?       Método "setMessage":
+
+    - Define o valor do campo "message" com o valor fornecido como argumento.
+
+?       Método "main":
+
+    - Cria uma instência da classe "GetterSetter".
+
+    - Usa o método "setMessage" para definir o valor do campo "message".
+
+    - Usa o método "getMessage" para obter e imprimir o valor de "message".
+
+    A classe "GetterSetter" demonstra o uso de métodos de acesso (getters) e métodos modificadores (setters) para
+  manipular o valor de um campo privado. O método "getMessage" permite obter o valor do campo "message", enquanto
+  o método "setMessage" permite definir o valor desse campo. O método "main" ilustra como criar uma instância da
+  classe, definir o valor do campo "message" usando o setter, e obter e imprimir esse valor usando o getter.
 */
