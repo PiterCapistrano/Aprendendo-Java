@@ -925,4 +925,15 @@ class GetterSetter{
 
     O método "setMessage" é um método modificador (setter) que define o valor do campo "message". Ele permite que
   outras partes do programa modifiquem o valor de "message".
+
+?     7 - Assinatura do Método "main":
+
+    - "public static void main(String[] args)": Este é o ponto de entrada do programa Java. O método "main" é 
+  necessário para que a JVM ( Java Virtual Machine ) possa executar o programa.
+
+?     8 - Corpo do método "main":
+
+    - "GetterSetter getterSetter = new GetterSetter();": Cria uma nova instância da classe "GetterSetter".
+
+    - "getterSetter.setMessage("Mensagem do Método Getter e Setter!");":
 */
