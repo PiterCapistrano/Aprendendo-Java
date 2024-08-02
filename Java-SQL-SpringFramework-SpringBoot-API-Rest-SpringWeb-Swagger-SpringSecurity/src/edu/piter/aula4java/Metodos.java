@@ -990,5 +990,17 @@ class Variaveis {
 /*
 ?     1 - Assinatura do Método "printMessage":
 
+    - "public void printMessage(String... messages)": O método é público, não retorna nehum valor (void) e aceita
+  um número variável de argumentos do tipo "String".
+  
+?     2 - Corpo do Método "printMessage":
 
+    - "for(String message : messages) { System.out.println(message); }": O método utiliza um laço "for-each" para
+  iterar sobre cada "String" no array "messages" e imprime cada mensagem no console.
+
+?     3 - Descrição da Funcionalidade "printMessage":
+
+    O método "printMessage" é projetado para receber um número variável de argumentos "String" (usando a sintaxe
+  varargs "String..."). Dentro do método, ele percorre cada mensagem fornecida e imprime cada uma delas no console.
+  Esse método é útil quando se deseja passar uma quantidade indeterminada de parâmetros para um método.
 */
