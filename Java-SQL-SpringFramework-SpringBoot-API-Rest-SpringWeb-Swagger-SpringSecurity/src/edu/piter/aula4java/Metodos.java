@@ -1047,4 +1047,31 @@ class Variaveis {
   "printMessage" é capaz de receber uma quantidade indeterminada de strings e imprimi-las uma por uma no console.
   O método "main" ilustra como criar uma instância da classe "Variaveis" e chamar o método "printMessage" com 
   vários argumentos, mostrando como esses parâmetros variáveis podem ser usados na prática.
+
+!         MÉTODOS SOBRSCRITOS (OVERRIDE)
+*/
+
+class Carro {
+  public void makeSound() {
+    System.out.println("Carro acelerando!");
+  }
+}
+
+class Ligado extends Carro {
+  @Override
+  public void makeSound(){
+    System.out.println("Vruuum!");
+  }
+
+  public static void main(String[] args){
+    Carro myCar = new Ligado();
+    Carro carro = new Carro();
+    carro.makeSound(); // Carro acelerando!
+    myCar.makeSound(); // Saída: Vruuum!
+  }
+}
+/*
+?     1 - Método 'makeSound':
+
+
 */
