@@ -1025,4 +1025,26 @@ class Variaveis {
   "Parâmetros", "Variáveis".
 
     - Cada um desses argumentos será impresso no console em linhas separadas.
+
+?     7 - Resumo e Conclusão:
+
+?       Método "printMessage":
+
+    - Recebe um número variável de argumentos "String".
+
+    - Imprime cada argumento em uma linha separada no console.
+
+?       Método "main":
+
+    - Cria uma instância da classe "Variaveis".
+
+    - Chama o método "printMessage" com uma lista de mensagens para demonstrar a funcionalidade de impressão de
+  múltiplos argumentos.
+
+?        Conclusão:
+
+    A classe "Variaveis" demonstra o uso de um método que aceita parâmetros variáveis ("varargs"). O método 
+  "printMessage" é capaz de receber uma quantidade indeterminada de strings e imprimi-las uma por uma no console.
+  O método "main" ilustra como criar uma instância da classe "Variaveis" e chamar o método "printMessage" com 
+  vários argumentos, mostrando como esses parâmetros variáveis podem ser usados na prática.
 */
