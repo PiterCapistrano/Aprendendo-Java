@@ -1003,4 +1003,26 @@ class Variaveis {
     O método "printMessage" é projetado para receber um número variável de argumentos "String" (usando a sintaxe
   varargs "String..."). Dentro do método, ele percorre cada mensagem fornecida e imprime cada uma delas no console.
   Esse método é útil quando se deseja passar uma quantidade indeterminada de parâmetros para um método.
+
+?     4 - Assinatura do Método "main":
+
+    - "public static void main(String[] args)": Este é o ponto de entrada do programa Java. O método "main" é
+  necessário para que a JVM ( Java Virtual Machine ) possa executar o programa.
+
+?     5 - Corpo do Método "main":
+
+    - "Variaveis variaveis = new Variaveis();": Cria uma nova instância da classe "Variaveis".
+
+    - "variaveis.printMessage("Mensagens", "dos", "Métodos", "com", "Parâmetros", "Variáveis");": Chama o método
+  "printMessage" na instância "variaveis", passando uma lista de "String" como argumentos. Cada argumento será 
+  impresso no console.
+
+?     6 - Descrição de Funcionalidade "main":
+
+    - Cria uma nova instância da classe "Variaveis".
+
+    - Chama o método "printMessage" com uma lista de argumentos "String": "Mensagens", "dos", "Métodos", "com", 
+  "Parâmetros", "Variáveis".
+
+    - Cada um desses argumentos será impresso no console em linhas separadas.
 */
