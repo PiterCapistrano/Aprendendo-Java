@@ -1071,7 +1071,9 @@ class Ligado extends Carro {
   }
 }
 /*
-?     1 - Método 'makeSound':
+?     1 - Assinatura do Método 'makeSound':
 
+    - "public void makeSound()": O método é público e não retorna nenhum valor (void).
 
+?     2 - Corpo do Método "makeSound":
 */
