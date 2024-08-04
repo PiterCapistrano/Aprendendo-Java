@@ -548,17 +548,17 @@ class Estatica{
 !       MÉTODOS ABSTRATOS
  */
 abstract class Animal {
-  abstract void makeSound();
+  abstract void estadoCarro();
 }
 
 class Dog extends Animal {
-  void makeSound() {
+  void estadoCarro() {
     System.out.println("Bark");
   }
 
   public static void main(String[] args) {
     Dog dog = new Dog();
-    dog.makeSound(); // Saída: Bark
+    dog.estadoCarro(); // Saída: Bark
   }
 }
 /*
@@ -567,24 +567,24 @@ class Dog extends Animal {
     - "abstract class Animal": A classe "Animal" é declarada como abstrata. Uma classe abstrata não pode ser
   instanciada diretamente; ela serve como uma classe base para outras classes.
 
-    - "abstract void makeSound()": O método "makeSound", é declarado como abstrato. Isso significa que ele não
+    - "abstract void estadoCarro()": O método "estadoCarro", é declarado como abstrato. Isso significa que ele não
   possui uma implementação na classe "Animal" e deve ser implementado por qualquer classe concreta que estenda 
   "Animal".
 
 ?     2 - Descrição da Funcionalidade da Classe "Animal":
 
-    A classe "Animal" define um método abstrato "makeSound", que deve ser implementado por qualquer classe que
+    A classe "Animal" define um método abstrato "estadoCarro", que deve ser implementado por qualquer classe que
   estenda "Animal". Isso estabelece um contrato que todas as subclasse de "Animal" devem seguir, garantindo que
-  cada uma delas forneça uma implementação especifica do método "makeSound".
+  cada uma delas forneça uma implementação especifica do método "estadoCarro".
 
 ?     3 - Classe "Dog":
 
     - "class Dog extends Animal": A classe "Dog" estende a classe abstrata "Animal", o que significa que "Dog"
   herda as propriedades e métodos abstratos definidos em "Animal".
 
-?     4 - Método "makeSound":
+?     4 - Método "estadoCarro":
 
-    - "void makeSound()": Este método é a implementação concreta do método abstrato "makeSound" definido na classe
+    - "void estadoCarro()": Este método é a implementação concreta do método abstrato "estadoCarro" definido na classe
   "Animal".
 
     - "System.out.println("Bark");": Quando chamado, o método imprime "Bark" no console.
@@ -595,28 +595,28 @@ class Dog extends Animal {
 
     - "Dog dog = new Dog();": Cria uma nova instância da classe "Dog".
 
-    - "dog.makeSound();": Chama o método "makeSound" na instância "dog", o que resulta na impressão de "Bark" no
+    - "dog.estadoCarro();": Chama o método "estadoCarro" na instância "dog", o que resulta na impressão de "Bark" no
   console.
 
 ?     6 - Descrição da Funcionalidade da Classe "Dog":
 
-    A classe "Dog" implementa o método abstrato "makeSound" da classe "Animal". A implementação de "makeSound" em
+    A classe "Dog" implementa o método abstrato "estadoCarro" da classe "Animal". A implementação de "estadoCarro" em
   "Dog" imprime "Bark" no console, fornecendo a especificação concreta do som que um cão faz.
 
 ?     7 - Resumo e Conclusão:
 
-    - Classe Abstrata "Animal": Define um método abstrato "makeSound" que deve ser implementado por qualquer classe
+    - Classe Abstrata "Animal": Define um método abstrato "estadoCarro" que deve ser implementado por qualquer classe
   concreta que estenda "Animal".
 
-    - Classe Concreta "Dog": Estende "Animal" e fornece uma implementação concreta para o método "makeSound", que
+    - Classe Concreta "Dog": Estende "Animal" e fornece uma implementação concreta para o método "estadoCarro", que
   imprime "Bark" no console.
 
-    - Método "main": Cria uma instância de "Dog" e chama "makeSound", demonstrando a implementação específica de
-  "Dog" para o método abstrato "makeSound".
+    - Método "main": Cria uma instância de "Dog" e chama "estadoCarro", demonstrando a implementação específica de
+  "Dog" para o método abstrato "estadoCarro".
 
     Este exemplo ilustra o conceito de herança e polimorfismo na programação orientada a objetos. A classe abstrata
-  "Animal" estabelece um contrato para suas subclasses através do método abstrato "makeSound". A classe "Dog" implementa
-  esse contrato fornecendo sua própria versão de "makeSound", permitindo que diferentes subclasses de "Animal"
+  "Animal" estabelece um contrato para suas subclasses através do método abstrato "estadoCarro". A classe "Dog" implementa
+  esse contrato fornecendo sua própria versão de "estadoCarro", permitindo que diferentes subclasses de "Animal"
   forneçam implementações específicas para suas necessidades.
 
 !       MÉTODOS FINAL  
@@ -1052,28 +1052,76 @@ class Variaveis {
 */
 
 class Carro {
-  public void makeSound() {
-    System.out.println("Carro acelerando!");
+  public void estadoCarro() {
+    System.out.println("Saindo com o carro!");
   }
 }
 
 class Ligado extends Carro {
   @Override
-  public void makeSound(){
+  public void estadoCarro(){
     System.out.println("Vruuum!");
   }
+}
+
+  class Desligado extends Carro{
+    @Override
+    public void estadoCarro(){
+      System.out.println("Ligar o carro para ele se mover!");
+    }
+  
 
   public static void main(String[] args){
-    Carro myCar = new Ligado();
+    boolean ligado = true;
     Carro carro = new Carro();
-    carro.makeSound(); // Carro acelerando!
-    myCar.makeSound(); // Saída: Vruuum!
+    Carro carroLigado = new Ligado();
+    Carro carroDesligado = new Desligado();
+if (ligado == true) {
+      
+      carro.estadoCarro(); // Saída: Saindo com o carro!
+      carroLigado.estadoCarro(); // Saída: Vruuum!
+    }else
+      carroDesligado.estadoCarro(); // Saída: Ligar o carro para ele se mover!
   }
 }
+
 /*
-?     1 - Assinatura do Método 'makeSound':
+?     1 - Definição da Classe "Carro":
 
-    - "public void makeSound()": O método é público e não retorna nenhum valor (void).
+    - A classe "Carro" posui um método "estadoCarro" que imprime "Saindo com o carro!" no console. Esta é a classe
+  base.
 
-?     2 - Corpo do Método "makeSound":
+?     2 - Definição da Classe "Ligado":
+
+    - A classe "Ligado" herda de "Carro" e sobrescreve o método "estadoCarro" para imprimir "Vruuum!" no console.
+  Esta classe representa o estado do carro quando está ligado.
+
+?     3 - Definição da Classe "Desligado":
+
+    - A classe "Desligado" herda de "Carro" e sobrescreve o método "estadoCarro" para imprimir "Ligar o carro para
+  ele se mover!" no console. Esta classe representa o estado do carro quando está desligado.
+
+?     4 - Funcionalidade do Método "main":
+
+?       Váriavel "ligado":
+
+    - "boolean ligado = true;": Define uma variável booleana "ligado" como "true".
+
+?       Criação de Objetos:
+
+    - "Carro carro = new Carro();": Cria uma instância da classe "Carro".
+
+    - "Carro carroLigado = new Ligado();": Cria uma instância da classe "Ligado" e a atribui a uma variável do 
+  tipo "Carro".
+
+    - "Carro carroDesligado = new Desligado();": Cria uma instância da classe "Desligado" e a atribui a uma 
+  variável do tipo "Carro".
+
+?       Estrutura Condicional:
+
+    - "if (ligado == true) {...} else {...}": Verifica se a variável "ligado" é "true".
+
+?    - Caso "ligado" seja "true":
+
+    - "carro.estadoCarro();": Chama o método "estadoCarro" na instância de "Carro", imprimindo "Saindo com o "
 */
