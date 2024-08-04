@@ -1123,5 +1123,16 @@ if (ligado == true) {
 
 ?    - Caso "ligado" seja "true":
 
-    - "carro.estadoCarro();": Chama o método "estadoCarro" na instância de "Carro", imprimindo "Saindo com o "
+    - "carro.estadoCarro();": Chama o método "estadoCarro" na instância de "Carro", imprimindo "Saindo com o carro!".
+
+    - "carroLigado.estadoCarro();": Chama o método "estadoCarro" na instância de "Ligado", imprimindo "Vruuum!".
+
+?     - Caso "ligado" seja "false":
+
+    - "carroDesligado.estadoCarro();": Chama o método "estadoCarro" na instância de "Desligado", imprimindo "Ligar
+  o carro para ele se mover!".
+
+?    5 - Resumo e Conclusão:
+
+
 */
