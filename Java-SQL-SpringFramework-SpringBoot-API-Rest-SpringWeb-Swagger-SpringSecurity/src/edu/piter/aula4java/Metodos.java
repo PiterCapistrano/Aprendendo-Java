@@ -1200,4 +1200,82 @@ class Sobrecarga{
 
     - "public void mensagemSobrecarga(String message, int times)": O método é público, não retorna nenhum valor
   (void) e aceita dois argumentos: uma String("message") e um inteiro ("times").
+
+?     5 - Corpo do Segundo Método "mesagemSobrecarga":
+
+    - "for (int i = 0; i < times; i++) { System.out.println(message); }": O método utiliza um laço "for" para 
+  interar "times" vezes, imprimindo a mensagem fornecida em cada iteração.
+
+?     6 - Descrição da Funcionalidade do Segundo Método "mensagemSobrecarga":
+
+    O segundo método "mensagemSobrecarga" é projetado para imprimir uma mensagem múltiplas vezes no console.
+  Ele recebe uma string e um número inteiro, e imprime a mensagem o número de vezes especificado pelo inteiro.
+
+?     7 - Definição do Método "main":
+
+?       Criação de Objetos:
+
+    - "Sobrecarga sobrecarga = new Sobrecarga();": Cria uma nova instância da classe "sobrecarga".
+
+?       Chamadas de Método:
+
+    - "sobrecarga.mensagemSobrecarga("Som do galope de um cavalo!");": Chama o primeiro método "mensagemSobrecarga",
+  imprimindo "Som do galope do cavalo!" no console.
+
+    - "sobrecarga.mensagemSobrecarga("Pocoto", 3);": Chama o segundo método "mensagemSobrecarga", imprimindo "Pocoto"
+  três vezes no console.
+
+?     8 - Resumo e Conclusão:
+
+?       Primeiro Método "mensagemSobrecarga":
+
+    - Recebe uma string e a imprime no console.
+
+?       Segundo Método "mensagemSobrecarga":
+
+    - Recebe uma string e um número inteiro, e imprime a string o número de vezes especificado pelo inteiro.
+
+?       Método "main":
+
+    - Cria uma instância da classe "Sobrecarga".
+
+    - Chama o primeiro método "mensagemSobrecarga" para imprimir uma mensagem única.
+
+    - Chama o segundo método "mensagemSobrecarga" para imprimir uma mensagem múltipla vezes.
+
+?       Funcionalidade Geral:
+
+    A classe "Sobrecarga" demonstra o conceito de sobrecarga de métodos em Java, onde dois métodos com o mesmo
+  nome, mas diferentes parâmetros, coexistem na mesma classe. O método "mensagemSobrecarga" é sobrecarregado para 
+  permitir a impressão de uma mensagem única ou a impressão de uma mensagem múltiplas vezes. O método "main" 
+  ilustra como criar uma instância da classe "Sobrecarga" e utilizar ambas as versões do método "mensagemSobrecarga"
+  para imprimir mensagens no console.
+
+!       MÉTODOS DE CLASSE ANÔNIMA
+*/
+class Anonima {
+  interface HelloWorld {
+    void greet();
+    void gretSomeone(String someone);
+  }
+  public void sayHello() {
+    HelloWorld englishGreeting = new HelloWorld() {
+      public void greet(){
+        gretSomeone("world");
+      }
+      public void gretSomeone(String someone) {
+        System.out.println("Hello "+ someone);
+      }
+    };
+
+    englishGreeting.greet();
+
+  }
+  public static void main(String[] args) {
+    Anonima anonima = new Anonima();
+    anonima.sayHello(); // Saída Hello world
+  }
+}
+/*
+?
 */
