@@ -1181,3 +1181,23 @@ class Sobrecarga{
     sobrecarga.mensagemSobrecarga("Pocoto", 3);
   }
 }
+/*
+?     1 - Assinatura do Primeiro Método "mensagemSobrecarga":
+
+    - "public void mensagemSobrecarga(String message)": O método é público, não retorna nenhum valor (void) e
+  aceita um argumento do tipo "string".
+
+?     2 - Corpo do Primeiro Método "mensagemSobrecarga":
+
+    - "System.out.println(message);": Imprime o valor do argumento "message" no console.
+
+?     3 - Descrição da Funcionalidade do Primeiro Método "mensagemSobrecarga":
+
+    O primeiro método "mensagemSobrecarga" é projetado para imprimir uma única mensagem no  console. Ele recebe
+  uma string como argumento e simplesmente a imprime.
+
+?     4 - Assinatura do Segundo Método "mensagemSobrecarga":
+
+    - "public void mensagemSobrecarga(String message, int times)": O método é público, não retorna nenhum valor
+  (void) e aceita dois argumentos: uma String("message") e um inteiro ("times").
+*/
