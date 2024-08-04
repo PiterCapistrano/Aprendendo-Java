@@ -1160,4 +1160,24 @@ if (ligado == true) {
   Dependendo do estado do carro ("ligado" ou "desligado"), difirentes mensagens são impressas no console. O 
   método "main" cria instâncias dessas classes e usa uma estrutura condicional para decidir qual mensagem imprimir,
   mostrando como o polimorfismo permite que objetos de diferentes classes sejam tratados de maneira uniforme.
+
+!       MÉTODOS SOBRECARGA (Overload)
 */
+
+class Sobrecarga{
+  public void mensagemSobrecarga(String message) {
+    System.out.println(message);
+  }
+
+  public void mensagemSobrecarga(String message, int times) {
+    for (int i = 0; i < times; i++) {
+      System.out.println(message);
+    }
+  }
+
+  public static void main(String[] args) {
+    Sobrecarga sobrecarga = new Sobrecarga();
+    sobrecarga.mensagemSobrecarga("Som do galope de um cavalo!");
+    sobrecarga.mensagemSobrecarga("Pocoto", 3);
+  }
+}
