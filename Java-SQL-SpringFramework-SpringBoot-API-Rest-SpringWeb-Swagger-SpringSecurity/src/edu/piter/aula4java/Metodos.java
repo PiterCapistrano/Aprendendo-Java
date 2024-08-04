@@ -1134,5 +1134,30 @@ if (ligado == true) {
 
 ?    5 - Resumo e Conclusão:
 
+?       Classe "Carro":
 
+    - Método "estadoCarro": Imprime "Saindo com o carro!".
+
+?       Classe "Ligado":
+
+    - Sobrescreve "estadoCarro": Imprime "Vruuum!".
+
+?       Classe "Desligado":
+
+    - Sbrescreve "estadoCarro": Imprime "Ligar o carro para ele se mover".
+
+?       Método "main":
+
+    - Define uma variável "ligado" como "true".
+
+    - Cria instância de "Carro", "Ligado" e "Desligado".
+
+    - Utiliza uma estrutura condicional para chamar o método "estadoCarro" dependendo do valor do "ligado".
+
+?       Funcionalidade Geral
+
+    A classe "Carro" e suas subclasses "Ligado" e "Desligado" demonstram o conceito de polimorfismo em Java.
+  Dependendo do estado do carro ("ligado" ou "desligado"), difirentes mensagens são impressas no console. O 
+  método "main" cria instâncias dessas classes e usa uma estrutura condicional para decidir qual mensagem imprimir,
+  mostrando como o polimorfismo permite que objetos de diferentes classes sejam tratados de maneira uniforme.
 */
