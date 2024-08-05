@@ -1256,14 +1256,14 @@ class Sobrecarga{
 class Anonima {
   interface HelloWorld {
     void greet();
-    void gretSomeone(String someone);
+    void greetSomeone(String someone);
   }
   public void sayHello() {
     HelloWorld englishGreeting = new HelloWorld() {
       public void greet(){
-        gretSomeone("world");
+        greetSomeone("world");
       }
-      public void gretSomeone(String someone) {
+      public void greetSomeone(String someone) {
         System.out.println("Hello "+ someone);
       }
     };
@@ -1277,5 +1277,59 @@ class Anonima {
   }
 }
 /*
-?
+?      1 - Definição da interface "HelloEorld":
+
+    A interface "HelloWorld" define dois métodos:
+
+      - "greet()": Método sem parâmetros, que deve ser implementado para executar uma saudação.
+
+      - "greetSomeone(String someone)": Método que aceita um parâmetro "String" para saudar uma pessoa específica.
+  
+?     2 - Criação da Classe Anônima e do Método "sayHello":
+    
+    Dentro do método "sayHello", uma classe anônima é criada implementando a interface "HelloWorld". Isso é feito
+  diretamente no ponto de instanciamento:
+
+      - Método "greet": Implementa o método "greet" chamando "greetSomeone("world")".
+
+      - Método "greetSomeone": Implementa o método "greetSomeone" para imprimir "Hello " seguido do nome passado
+    como argumento.
+
+?     3 - Chamada do Método "greet":
+
+    Após criar a classe anônima, método "greet" é chamado na instância "englishGreeting", que, por sua vez, chama
+  "greetSomeone("world")", resultando na saída "Hello world".
+
+?     4 - Método "main":
+
+    - Criação de Instância: Cria uma instância da classe "Anonima".
+
+    - Chamada de Método: Chama o método "sayHello" na instância "anonima", que executa a lógica de saudação definida
+  na classe anônima.
+
+?     5 - Resumo e Conclusão:
+
+    - Interface "HelloWorld": Define a estrutura de métodos que devem ser implementados para saudações.
+
+    - Método "sayHello":
+
+      - Cria uma classe anônima que implementa "HelloWorld".
+
+      - Define os métodos "greet" e "greetSomeone" para saudar "world".
+
+      - Chama o método "greet", resultando na saída "Hello world".
+    
+    - Método "main":
+
+      - Cria uma instância da classe "Anonima".
+
+      - Chama o método "sayHello", demonstrando a funcionalidade da classe anônima.
+
+?     Funcionalidade Geral:
+
+    A classe "Anonima" demonstra o uso de classes anônimas em Java. Classes anônimas permitem a criação de implementações
+  de interfaces ou superclasses sem definir uma classe separada. No método "sayHello", uma classe anônima implementa
+  a interface "HelloWorld", fornecendo uma implementação específica dos métoddos "greet" e "greetSomeone".Quando
+  "sayHello" é chamado, ele utiliza essa implementação para imprimir "Hello world" no console. O método "main"
+  mostra como instanciar a classe "Anonima" e chamar "sayHello", exemplificando o uso de classes anônimas na prática.
 */
