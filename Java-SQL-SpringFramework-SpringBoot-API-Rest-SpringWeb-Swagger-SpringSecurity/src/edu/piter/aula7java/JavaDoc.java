@@ -38,5 +38,15 @@ public class JavaDoc {
      @return                         Definição do tipo de retorno de um método
 
      @throws                         Se o método lança alduma exceção
+     
+
+    Abaixo, iremos ilustrar a classe Calculadora com um exemplo de documentação, destacando as tags mais utilizadas:
 */
 }
+/**
+ * <h1>Calculadora</h1>
+ * 
+ * A calculadora realiza operações matemáticas entre números inteiros
+ * <p>
+ * <b>Note:</b> Leia atentamente a documentação 
+ */
