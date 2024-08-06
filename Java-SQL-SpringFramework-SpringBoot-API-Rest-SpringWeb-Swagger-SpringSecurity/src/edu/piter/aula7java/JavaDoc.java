@@ -134,4 +134,3 @@ class SomaMultiplica {
  // No terminal execute o comando abaixo:
 
 // javadoc -encoding UTF-8 -docecoding ISO-8859-1 -d ../docs src/*.java
-//
