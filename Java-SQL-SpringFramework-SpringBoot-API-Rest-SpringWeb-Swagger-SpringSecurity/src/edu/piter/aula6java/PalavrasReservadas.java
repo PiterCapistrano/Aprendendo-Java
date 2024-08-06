@@ -290,5 +290,126 @@ public class PalavrasReservadas {
     } catch (ArithmeticException e) {
         System.out.println("Cannot divide by zero");
     }
+
+    - "finally": bloco de código, após um try-catch, que é executado independentemente do fluxo de programa seguido
+  ao lidar com uma exceção.
+    Exemplo:
+    try {
+        int result = 10 / 0;
+    } catch (ArithmeticException e) {
+        System.out.println("Cannot divide by zero");
+    } finally {
+        System.out.println("This will always be executed");
+    }
+
+    - "throw": usado para passar uma exceção para o método que o chamou.
+    Exemplo:
+    public void divide(int a, int b) throws ArithmeticException {
+        if (b == 0) {
+            throw new ArithmeticException("Cannot divide by zero");
+        }
+        System.out.println(a / b);
+    }
+
+    - "throws": indica que um método pode passar uma exceção para o método que o chamou.
+    Exemplo:
+    public void divide(int a, int b) throws ArithmeticException {
+        if (b == 0) {
+            throw new ArithmeticException("Cannot divide by zero");
+        }
+        System.out.println(a / b);
+    }
+
+    - "try": bloco de código que tentará ser executado, mas que pode causar uma exceção.
+    Exemplo:
+    try {
+        int result = 10 / 0;
+    } catch (ArithmeticException e) {
+        System.out.println("Cannot divide by zero");
+    }
+
+?     Variáveis de Referência:
+
+    - "super": refere-se a superclasse imediata.
+    Exemplo:
+    public class Dog extends Animal {
+        public void makeSound() {
+            super.makeSound();
+            System.out.println("Bark");
+        }
+    }
+
+    - "this": refere-se a instância atual do objeto.
+    Exemplo:
+    public class Example {
+        private String name;
+
+        public Example(String name) {
+            this.name = name;
+        }
+
+        public void printName() {
+            System.out.println(this.name);
+        }
+    }
+
+?     Palavras Reservadas não Utilizadas:
+
+    - "const": Não utilize para declarar constantes; use public static final. Reservada para uso futuro. Não é 
+  usada atualmente.
+
+    - "goto": não implementada na linguagem Java, por ser considerada prejudicial.
+
+?     Literais Reservados:
+
+    De acordo com a Java Language Specification, null, true e false são tecnicamente chamadas de valores literais,
+  e não keywords. Se você tentar criar algum identificador com estes valores, você também terá um erro de compilação.
+
+?     Escopo de Uso:
+
+?     Uso                         Palavras                            Observação
+
+    Arquivo                 package, import, static.
+
+    Classe                public ou protected ou private           private (em caso de classe interna),
+                          + final ou abstract + extends ou         final ou abstract.
+                          implements.
+    
+    Método                public ou protected ou private +         void em caso de não ter retorno ou 
+                          static ou final ou abstract + void       return se houver.
+                          e return.
+        
+    Atributo              public ou protected ou private + 
+                          static ou final + tipo primitivo.
+
+?     Palavras "Opostas":
+
+    Assim como nas classificações gramaticais da língua portuguesa, existem algumas palavras que são completamente
+  opostas (antônimas) na linguagem Java conforme tabela abaixo:
+
+?     Palavra                     Palavra                             Explicação
+
+                                                                 Enquanto "package" determina o diretório
+      package                     import                        real da classe, o "import" informa de onde
+                                                                será importada a classe. Isso porque, podemos
+                                                                ter classes de mesmo nome.
+                                                                
+                                                                 Enquando "extends" determina que uma classe
+      extends                   implements                      estende outra classe, "implements" determina
+                                                                que uma classe implementa uma interface, 
+                                                                porém nunca o contrário.
+                        
+                                                                 Enquanto "final" determina fim de alteração de
+                                                                valor ou lógica comportamental, "abstract" em 
+      final                      abstract                       métodos, exige que sub-classes precisarão definir
+                                                                comportamento e um método abstrato.
+                                                                NOTA: Se uma classe contém um único método abstrato,
+                                                                toda classe precisa ser.
+
+                                                                 Esta é uma das situações mais complicadas, de 
+                                                                compreensão destas duas palavras. Enquanto a
+      throws                      throw                         throws determina que um método pode lançar uma
+                                                                exceção**. Vamos conhecer mais sobre este conceito
+                                                                no assunto Exceções.**
 */
 }
