@@ -89,3 +89,12 @@ public class JavaDoc {
  * a nível de documentação.
  * Que incrível !!!
  */
+
+ /*
+  *   Um comentário, não possui a finalidade de amenizar um algoritmo não estruturado, conforme as convenções da
+  * linguagem
+  */
+
+/*
+ * Este método foi elaborado as pressas
+ */
