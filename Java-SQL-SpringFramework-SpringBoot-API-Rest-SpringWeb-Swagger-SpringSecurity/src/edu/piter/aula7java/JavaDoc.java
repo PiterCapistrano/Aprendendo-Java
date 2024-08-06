@@ -118,3 +118,19 @@ class SomaMultiplica {
         System.out.println(somaMultiplica.somaMultiplica(20, 10, "M")); // Saída = 200
     }
 }
+/*
+!               JAVADOC
+
+        Javadoc é um gerador de documentação criado pela Sun Microsystems, para documentar a API dos programas em
+    Java, a partir do código-fonte. O resultado é expresso em HTML. É constituído, basicamente, por algumas marcações
+    muitos simples, inseridas nos comentários do programa.
+
+        Este sistema, é o padrão de documentação de classe em Java, onde muitas das IDEs desta linguagem irão
+    automaticamente gerar um Javadoc em HTML.
+
+?          Criando nossa Documentação no Formato HTML, para Disponibilizar via Web:
+ */
+
+ // No terminal execute o comando abaixo:
+
+// javadoc -encoding UTF-8 -docecoding ISO-8859-1 -d ../docs src/*.java
