@@ -548,17 +548,17 @@ class Estatica{
 !       MÉTODOS ABSTRATOS
  */
 abstract class Animal {
-  abstract void estadoCarro();
+  abstract void animal();
 }
 
 class Dog extends Animal {
-  void estadoCarro() {
+  void animal() {
     System.out.println("Bark");
   }
 
   public static void main(String[] args) {
     Dog dog = new Dog();
-    dog.estadoCarro(); // Saída: Bark
+    dog.animal(); // Saída: Bark
   }
 }
 /*
@@ -567,24 +567,24 @@ class Dog extends Animal {
     - "abstract class Animal": A classe "Animal" é declarada como abstrata. Uma classe abstrata não pode ser
   instanciada diretamente; ela serve como uma classe base para outras classes.
 
-    - "abstract void estadoCarro()": O método "estadoCarro", é declarado como abstrato. Isso significa que ele não
+    - "abstract void animal()": O método "animal", é declarado como abstrato. Isso significa que ele não
   possui uma implementação na classe "Animal" e deve ser implementado por qualquer classe concreta que estenda 
   "Animal".
 
 ?     2 - Descrição da Funcionalidade da Classe "Animal":
 
-    A classe "Animal" define um método abstrato "estadoCarro", que deve ser implementado por qualquer classe que
+    A classe "Animal" define um método abstrato "animal", que deve ser implementado por qualquer classe que
   estenda "Animal". Isso estabelece um contrato que todas as subclasse de "Animal" devem seguir, garantindo que
-  cada uma delas forneça uma implementação especifica do método "estadoCarro".
+  cada uma delas forneça uma implementação especifica do método "animal".
 
 ?     3 - Classe "Dog":
 
     - "class Dog extends Animal": A classe "Dog" estende a classe abstrata "Animal", o que significa que "Dog"
   herda as propriedades e métodos abstratos definidos em "Animal".
 
-?     4 - Método "estadoCarro":
+?     4 - Método "animal":
 
-    - "void estadoCarro()": Este método é a implementação concreta do método abstrato "estadoCarro" definido na classe
+    - "void animal()": Este método é a implementação concreta do método abstrato "animal" definido na classe
   "Animal".
 
     - "System.out.println("Bark");": Quando chamado, o método imprime "Bark" no console.
@@ -595,28 +595,28 @@ class Dog extends Animal {
 
     - "Dog dog = new Dog();": Cria uma nova instância da classe "Dog".
 
-    - "dog.estadoCarro();": Chama o método "estadoCarro" na instância "dog", o que resulta na impressão de "Bark" no
+    - "dog.animal();": Chama o método "animal" na instância "dog", o que resulta na impressão de "Bark" no
   console.
 
 ?     6 - Descrição da Funcionalidade da Classe "Dog":
 
-    A classe "Dog" implementa o método abstrato "estadoCarro" da classe "Animal". A implementação de "estadoCarro" em
+    A classe "Dog" implementa o método abstrato "animal" da classe "Animal". A implementação de "animal" em
   "Dog" imprime "Bark" no console, fornecendo a especificação concreta do som que um cão faz.
 
 ?     7 - Resumo e Conclusão:
 
-    - Classe Abstrata "Animal": Define um método abstrato "estadoCarro" que deve ser implementado por qualquer classe
+    - Classe Abstrata "Animal": Define um método abstrato "animal" que deve ser implementado por qualquer classe
   concreta que estenda "Animal".
 
-    - Classe Concreta "Dog": Estende "Animal" e fornece uma implementação concreta para o método "estadoCarro", que
+    - Classe Concreta "Dog": Estende "Animal" e fornece uma implementação concreta para o método "animal", que
   imprime "Bark" no console.
 
-    - Método "main": Cria uma instância de "Dog" e chama "estadoCarro", demonstrando a implementação específica de
-  "Dog" para o método abstrato "estadoCarro".
+    - Método "main": Cria uma instância de "Dog" e chama "animal", demonstrando a implementação específica de
+  "Dog" para o método abstrato "animal".
 
     Este exemplo ilustra o conceito de herança e polimorfismo na programação orientada a objetos. A classe abstrata
-  "Animal" estabelece um contrato para suas subclasses através do método abstrato "estadoCarro". A classe "Dog" implementa
-  esse contrato fornecendo sua própria versão de "estadoCarro", permitindo que diferentes subclasses de "Animal"
+  "Animal" estabelece um contrato para suas subclasses através do método abstrato "animal". A classe "Dog" implementa
+  esse contrato fornecendo sua própria versão de "animal", permitindo que diferentes subclasses de "Animal"
   forneçam implementações específicas para suas necessidades.
 
 !       MÉTODOS FINAL  
