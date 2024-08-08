@@ -68,5 +68,24 @@ public class AboutMe {
         System.out.println("Minha altura é " + altura + " cm");
     }
 }
+
+    Passando valores aos argumentos pelo VsCode:
+
+    1 - No VsCode clicar em "Executar" ou "Run";
+
+    2 - Depois clicar em "Adicionar Configuração..." ou "Add Configuration...";
+
+    3 - No arquivo criado "launch.json", encontrar a configuração do arquivo "AboutMe.java";
+
+    4 - Adicionar a linha ("args": ["nome", "sobrenome", "idade", "altura"]), abaixo da linha ("mainClass": "AboutMe",);
+
+    5 - Após isso executar o arquivo "AboutMe.java", para ver o registro dos argumentos serem impressos.
+    
+    Executando o programa agora no terminal:
+
+        cd C:\estudos\dio-trilha-java-basico\java-terminal
+        cd bin
+
+        java AboutMe nome sobrenome idade altura
 */ 
 }
