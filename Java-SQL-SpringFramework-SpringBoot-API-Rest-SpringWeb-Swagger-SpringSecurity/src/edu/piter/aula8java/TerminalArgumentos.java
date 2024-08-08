@@ -20,5 +20,11 @@ public class TerminalArgumentos {
   VsCode.
 
     Vamos criar uma classe chamada MinhaClasse.java com o código abaixo:
+
+public class MinhaClasse {
+    public static void main(String[] args) {
+        System.out.println("Oi, fui executado pelo Terminal");
+    }
+}
 */ 
 }
