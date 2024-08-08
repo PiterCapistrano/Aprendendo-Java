@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AboutMe2",
+      "request": "launch",
+      "mainClass": "edu.piter.aula8java.AboutMe2",
+      "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
+    },
+    {
+      "type": "java",
       "name": "Current File",
       "request": "launch",
       "mainClass": "${file}"
