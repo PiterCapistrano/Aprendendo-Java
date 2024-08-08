@@ -32,5 +32,18 @@ public class MinhaClasse {
 
     Mesmo usando uma IDE, nós sempre precisaremos identificar aonde se encontram as classes do nosso projeto, no
   meu caso está em: C:\estudos\dio-trilha-java-basico\java-terminal.
+
+?       Terminal:
+
+    Vamos ilustrar como executar uma classe, depois de compilada, sem precisar usar a IDE.
+
+    1 - Abra o MS-DOS ou Power Shell;
+
+    2 - Localize o diretódio do seu projeto, como no exemplo abaixo:
+            cd C:\estudos\dio-trilha-java-basico\java-terminal ;
+    
+    3 - Acesse a pasta **** bin. ** cd bin ** ;
+
+    4 - Agora digite o comando. ** java MinhaClasse **(nome da sua classe sem a extensão .class).
 */ 
 }
