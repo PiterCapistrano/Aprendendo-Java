@@ -1,4 +1,4 @@
-package edu.aprendendoASintaxeJava.aula1java;
+package edu.aprendendoASintaxeJava.aula3java;
 public class Operadores {
     public static void main(String[] args) {
 /*
