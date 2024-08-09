@@ -1,4 +1,4 @@
-package edu.aprendendoASintaxeJava.aula1java;
+package edu.aprendendoASintaxeJava.aula2java;
 
 public class TiposVariaveis {
   /*
