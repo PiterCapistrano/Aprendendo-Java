@@ -1,4 +1,4 @@
-package edu.piter.aula7java;
+package edu.aprendendoASintaxeJava.aula7java;
 
 public class JavaDoc {
 /*
