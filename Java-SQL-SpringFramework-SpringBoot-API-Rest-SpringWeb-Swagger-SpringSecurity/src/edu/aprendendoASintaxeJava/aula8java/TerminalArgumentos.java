@@ -1,4 +1,4 @@
-package edu.piter.aula8java;
+package edu.aprendendoASintaxeJava.aula8java;
 
 public class TerminalArgumentos {
 /*

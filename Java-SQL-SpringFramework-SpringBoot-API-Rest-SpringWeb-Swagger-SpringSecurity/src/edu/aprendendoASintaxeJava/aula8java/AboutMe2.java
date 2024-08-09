@@ -1,4 +1,4 @@
-package edu.piter.aula8java;
+package edu.aprendendoASintaxeJava.aula8java;
 
 import java.util.Locale;
 import java.util.Scanner;
