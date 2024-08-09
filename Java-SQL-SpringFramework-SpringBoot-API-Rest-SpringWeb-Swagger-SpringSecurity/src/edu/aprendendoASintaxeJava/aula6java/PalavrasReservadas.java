@@ -1,4 +1,4 @@
-package edu.piter.aula6java;
+package edu.aprendendoASintaxeJava.aula6java;
 
 public class PalavrasReservadas {
 /*
