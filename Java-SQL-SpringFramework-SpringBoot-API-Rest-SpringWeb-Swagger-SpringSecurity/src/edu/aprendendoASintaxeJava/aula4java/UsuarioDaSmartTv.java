@@ -1,4 +1,4 @@
-package edu.piter.aula4java;
+package edu.aprendendoASintaxeJava.aula1java;
 
 public class UsuarioDaSmartTv {
   public static void main(String[] args) throws Exception {

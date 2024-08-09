@@ -1,4 +1,4 @@
-package edu.piter.aula4java;
+package edu.aprendendoASintaxeJava.aula1java;
 /*
 !       EXERCICIO PRÁTICO:
 
