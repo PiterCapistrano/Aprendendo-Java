@@ -1,4 +1,4 @@
-package edu.piter.aula1java;
+package edu.aprendendoASintaxeJava.aula1java;
 //!     ANATOMIA DAS CLASSES
 
    /* Uma classe bem estruturada não quer guerra com ninguém

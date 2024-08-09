@@ -1,4 +1,4 @@
-package edu.piter.aula2java;
+package edu.aprendendoASintaxeJava.aula1java;
 
 public class TiposVariaveis {
     /*
