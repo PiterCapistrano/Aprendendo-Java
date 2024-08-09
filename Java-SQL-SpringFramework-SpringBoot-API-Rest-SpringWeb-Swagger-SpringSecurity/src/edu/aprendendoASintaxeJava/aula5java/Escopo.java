@@ -1,4 +1,4 @@
-package edu.piter.aula5java;
+package edu.aprendendoASintaxeJava.aula5java;
 
 public class Escopo {
 /*
