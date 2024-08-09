@@ -6,9 +6,16 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TiposVariaveis",
+      "request": "launch",
+      "mainClass": "TiposVariaveis",
+      "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
+    },
+    {
+      "type": "java",
       "name": "AboutMe2",
       "request": "launch",
-      "mainClass": "edu.piter.aula8java.AboutMe2",
+      "mainClass": "edu.aprendendoASintaxeJava.aula8java.AboutMe2",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
@@ -21,253 +28,253 @@
       "type": "java",
       "name": "BoletimEstudantil",
       "request": "launch",
-      "mainClass": "edu.piter.aula1java.BoletimEstudantil",
+      "mainClass": "edu.aprendendoASintaxeJava.aula1java.BoletimEstudantil",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "BoletimEstudantilIdentacao",
       "request": "launch",
-      "mainClass": "edu.piter.aula1java.BoletimEstudantilIdentacao",
+      "mainClass": "edu.aprendendoASintaxeJava.aula1java.BoletimEstudantilIdentacao",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "CondicionalExample",
       "request": "launch",
-      "mainClass": "edu.piter.aula1java.CondicionalExample",
+      "mainClass": "edu.aprendendoASintaxeJava.aula1java.CondicionalExample",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "InnerMinhaClass",
       "request": "launch",
-      "mainClass": "edu.piter.aula1java.InnerMinhaClass",
+      "mainClass": "edu.aprendendoASintaxeJava.aula1java.InnerMinhaClass",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "MinhaClass",
       "request": "launch",
-      "mainClass": "edu.piter.aula1java.MinhaClass",
+      "mainClass": "edu.aprendendoASintaxeJava.aula1java.MinhaClass",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "AboutBoolean",
       "request": "launch",
-      "mainClass": "edu.piter.aula2java.AboutBoolean",
+      "mainClass": "edu.aprendendoASintaxeJava.aula2java.AboutBoolean",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "AboutChar",
       "request": "launch",
-      "mainClass": "edu.piter.aula2java.AboutChar",
+      "mainClass": "edu.aprendendoASintaxeJava.aula2java.AboutChar",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "AboutStrings",
       "request": "launch",
-      "mainClass": "edu.piter.aula2java.AboutStrings",
+      "mainClass": "edu.aprendendoASintaxeJava.aula2java.AboutStrings",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "CharArrayExample",
       "request": "launch",
-      "mainClass": "edu.piter.aula2java.CharArrayExample",
+      "mainClass": "edu.aprendendoASintaxeJava.aula2java.CharArrayExample",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "CountOccurrencesExample",
       "request": "launch",
-      "mainClass": "edu.piter.aula2java.CountOccurrencesExample",
+      "mainClass": "edu.aprendendoASintaxeJava.aula2java.CountOccurrencesExample",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "ExemposPraticosBoolean",
       "request": "launch",
-      "mainClass": "edu.piter.aula2java.ExemposPraticosBoolean",
+      "mainClass": "edu.aprendendoASintaxeJava.aula2java.ExemposPraticosBoolean",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "PalindromeExample",
       "request": "launch",
-      "mainClass": "edu.piter.aula2java.PalindromeExample",
+      "mainClass": "edu.aprendendoASintaxeJava.aula2java.PalindromeExample",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "PalindromeExample2",
       "request": "launch",
-      "mainClass": "edu.piter.aula2java.PalindromeExample2",
+      "mainClass": "edu.aprendendoASintaxeJava.aula2java.PalindromeExample2",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "StringFormatExample",
       "request": "launch",
-      "mainClass": "edu.piter.aula2java.StringFormatExample",
+      "mainClass": "edu.aprendendoASintaxeJava.aula2java.StringFormatExample",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "TiposVariaveis",
       "request": "launch",
-      "mainClass": "edu.piter.aula2java.TiposVariaveis",
+      "mainClass": "edu.aprendendoASintaxeJava.aula2java.TiposVariaveis",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "OperadorUnarios",
       "request": "launch",
-      "mainClass": "edu.piter.aula3java.OperadorUnarios",
+      "mainClass": "edu.aprendendoASintaxeJava.aula3java.OperadorUnarios",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "Operadores",
       "request": "launch",
-      "mainClass": "edu.piter.aula3java.Operadores",
+      "mainClass": "edu.aprendendoASintaxeJava.aula3java.Operadores",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "OpreadoresLogicos",
       "request": "launch",
-      "mainClass": "edu.piter.aula3java.OpreadoresLogicos",
+      "mainClass": "edu.aprendendoASintaxeJava.aula3java.OpreadoresLogicos",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "Relacionais",
       "request": "launch",
-      "mainClass": "edu.piter.aula3java.Relacionais",
+      "mainClass": "edu.aprendendoASintaxeJava.aula3java.Relacionais",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "Ternario",
       "request": "launch",
-      "mainClass": "edu.piter.aula3java.Ternario",
+      "mainClass": "edu.aprendendoASintaxeJava.aula3java.Ternario",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "Anonima",
       "request": "launch",
-      "mainClass": "edu.piter.aula4java.Anonima",
+      "mainClass": "edu.aprendendoASintaxeJava.aula4java.Anonima",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "Constructor",
       "request": "launch",
-      "mainClass": "edu.piter.aula4java.Constructor",
+      "mainClass": "edu.aprendendoASintaxeJava.aula4java.Constructor",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "Desligado",
       "request": "launch",
-      "mainClass": "edu.piter.aula4java.Desligado",
+      "mainClass": "edu.aprendendoASintaxeJava.aula4java.Desligado",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "Dog",
       "request": "launch",
-      "mainClass": "edu.piter.aula4java.Dog",
+      "mainClass": "edu.aprendendoASintaxeJava.aula4java.Dog",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "FinalMethods",
       "request": "launch",
-      "mainClass": "edu.piter.aula4java.FinalMethods",
+      "mainClass": "edu.aprendendoASintaxeJava.aula4java.FinalMethods",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "GetterSetter",
       "request": "launch",
-      "mainClass": "edu.piter.aula4java.GetterSetter",
+      "mainClass": "edu.aprendendoASintaxeJava.aula4java.GetterSetter",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "Metodos",
       "request": "launch",
-      "mainClass": "edu.piter.aula4java.Metodos",
+      "mainClass": "edu.aprendendoASintaxeJava.aula4java.Metodos",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "Sincronos",
       "request": "launch",
-      "mainClass": "edu.piter.aula4java.Sincronos",
+      "mainClass": "edu.aprendendoASintaxeJava.aula4java.Sincronos",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "Sobrecarga",
       "request": "launch",
-      "mainClass": "edu.piter.aula4java.Sobrecarga",
+      "mainClass": "edu.aprendendoASintaxeJava.aula4java.Sobrecarga",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "UsuarioDaSmartTv",
       "request": "launch",
-      "mainClass": "edu.piter.aula4java.UsuarioDaSmartTv",
+      "mainClass": "edu.aprendendoASintaxeJava.aula4java.UsuarioDaSmartTv",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "Variaveis",
       "request": "launch",
-      "mainClass": "edu.piter.aula4java.Variaveis",
+      "mainClass": "edu.aprendendoASintaxeJava.aula4java.Variaveis",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "Conta",
       "request": "launch",
-      "mainClass": "edu.piter.aula5java.Conta",
+      "mainClass": "edu.aprendendoASintaxeJava.aula5java.Conta",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "Calculadora",
       "request": "launch",
-      "mainClass": "edu.piter.aula7java.Calculadora",
+      "mainClass": "edu.aprendendoASintaxeJava.aula7java.Calculadora",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "SomaMultiplica",
       "request": "launch",
-      "mainClass": "edu.piter.aula7java.SomaMultiplica",
+      "mainClass": "edu.aprendendoASintaxeJava.aula7java.SomaMultiplica",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     },
     {
       "type": "java",
       "name": "AboutMe",
       "request": "launch",
-      "mainClass": "edu.piter.aula8java.AboutMe",
+      "mainClass": "edu.aprendendoASintaxeJava.aula8java.AboutMe",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555",
-      "args": ["Piter", "Capistrano", "32", "1.82"]
+      "args": ["aprendendoASintaxeJava", "Capistrano", "32", "1.82"]
     },
     {
       "type": "java",
       "name": "MinhaClasse",
       "request": "launch",
-      "mainClass": "edu.piter.aula8java.MinhaClasse",
+      "mainClass": "edu.aprendendoASintaxeJava.aula8java.MinhaClasse",
       "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
     }
   ]
