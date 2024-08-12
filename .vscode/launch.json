@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ResultadoEscolar",
+      "request": "launch",
+      "mainClass": "edu.estruturasCondicionais.ResultadoEscolar",
+      "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
+    },
+    {
+      "type": "java",
       "name": "EstruturaCondicionalTernaria",
       "request": "launch",
       "mainClass": "edu.estruturasCondicionais.EstruturaCondicionalTernaria",
