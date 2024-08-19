@@ -38,7 +38,7 @@ class SistemaMedida {
 
 class SistemaDeMedida {
   public static void main(String[] args) {
-    String sigla = "M";
+    String sigla = "A";
 
     switch (sigla) {
       case "P":{
@@ -55,8 +55,30 @@ class SistemaDeMedida {
         }
       default:{
         System.out.println("Digite P, M ou G");
-        break;
       }
     }
   }
 }
+
+/*
+!           CENÁRIO ONDE O SWITCH CASE É VIÁVEL DE SER IMPLEMENTADO:
+
+    porém um cenário que poderíamos adequar o uso do switch/case para melhorar nosso algorítimo seria conforme
+  ilustrção abaixo:
+
+?     Imagina que fomos requisitados a criar um sistema de plano telefonico onde:
+
+    - O sistema terá 03 planos: BASIC, MIDIA, TURBO
+
+    - BASIC: 100 minutos de ligação
+
+    - MIDIA: 100 minutos de ligação + Whats e Instagram grátis
+    
+    - TURBO: 100 minutos de ligação + Whats e Instagram grátis + 5Gb Youtube
+*/
+
+class PlanoTelefonico {
+    public static void main(String[] args) {
+      
+    }
+  }
