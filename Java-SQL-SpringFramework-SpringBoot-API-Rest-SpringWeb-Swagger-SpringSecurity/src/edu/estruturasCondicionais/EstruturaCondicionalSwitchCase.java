@@ -110,7 +110,7 @@ class PlanoTelefonicoSwitch {
       }
       case "B": {
         System.out.println("100 minutos de ligação");
-        break;
+        break; // break utilizado para não imprimir o default
       }
       default:{
         System.out.println("Selecione um plano válido: B, M ou T");
