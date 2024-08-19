@@ -18,6 +18,7 @@ public class EstruturaCondicionalSwitchCase {
           G                                   Grande
  */
 }
+//! FUNÇÃO COM IF/ELSE:
 class SistemaMedida {
   public static void main(String[] args) {
     String sigla = "M";
@@ -30,5 +31,32 @@ class SistemaMedida {
       System.out.println("GRANDE");
     } else
     System.out.println("Digite P, M ou G");
+  }
+}
+
+//! FUNÇÃO COM SWITCH CASE:
+
+class SistemaDeMedida {
+  public static void main(String[] args) {
+    String sigla = "M";
+
+    switch (sigla) {
+      case "P":{
+        System.out.println("PEQUENO");
+        break;
+      }
+       case "M":{
+        System.out.println("MÉDIO");
+        break;
+       }
+        case "G":{
+          System.out.println("GRANDE");
+          break;
+        }
+      default:{
+        System.out.println("Digite P, M ou G");
+        break;
+      }
+    }
   }
 }
