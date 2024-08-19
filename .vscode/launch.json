@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PlanoTelefonicoSwitch",
+      "request": "launch",
+      "mainClass": "edu.estruturasCondicionais.PlanoTelefonicoSwitch",
+      "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
+    },
+    {
+      "type": "java",
       "name": "SistemaDeMedida",
       "request": "launch",
       "mainClass": "edu.estruturasCondicionais.SistemaDeMedida",
