@@ -36,5 +36,7 @@ class ContadorCarneirinhos{
     for(int carneirinhos = 1; carneirinhos <=20; carneirinhos++){
       System.out.println(carneirinhos + " - Carneirinhos");
     }
+
+    System.out.println("Joãozinho dormiu!");
   }
 }
