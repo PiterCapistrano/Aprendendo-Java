@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ContadorCarneirinhos",
+      "request": "launch",
+      "mainClass": "edu.estruturasDeRepeticao.ContadorCarneirinhos",
+      "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
+    },
+    {
+      "type": "java",
       "name": "PlanoTelefonicoSwitch",
       "request": "launch",
       "mainClass": "edu.estruturasCondicionais.PlanoTelefonicoSwitch",
