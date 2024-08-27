@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Aula02ForEmArrays",
+      "request": "launch",
+      "mainClass": "edu.estruturasDeRepeticao.Aula02ForEmArrays",
+      "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
+    },
+    {
+      "type": "java",
       "name": "ContadorCarneirinhos",
       "request": "launch",
       "mainClass": "edu.estruturasDeRepeticao.ContadorCarneirinhos",
