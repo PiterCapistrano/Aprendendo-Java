@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Aula01TryCatch",
+      "request": "launch",
+      "mainClass": "edu.estruturasExcepcionais.Aula01TryCatch",
+      "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
+    },
+    {
+      "type": "java",
       "name": "Aula05DoWhile",
       "request": "launch",
       "mainClass": "edu.estruturasDeRepeticao.Aula05DoWhile",
