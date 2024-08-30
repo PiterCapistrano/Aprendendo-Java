@@ -1,5 +1,6 @@
 package edu.estruturasExcepcionais;
 
+import java.util.InputMismatchException;
 import java.util.Locale;
 // A classe Scanner permite que digitemos inputs no terminal e utilizemos os dados digitados no nosso código.
 import java.util.Scanner;
@@ -29,6 +30,7 @@ public class Aula01TryCatch {
 */
 
   public static void main(String[] args) {
+    try{
     // Criando o objeto scanner
     Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
@@ -49,6 +51,10 @@ public class Aula01TryCatch {
     System.out.println("Tenho " + idade + " anos!");
     System.out.println("Minha altura é " + altura + "cm");
     scanner.close();
+    }
+    catch(InputMismatchException e){
+      System.err.println("Os campos idade e altura precisam ser númericos e a altura com ponto ao invês de virgula!");
+    }
   }
 }
 /*
@@ -96,5 +102,26 @@ public class Aula01TryCatch {
     E quando inevitavelmente ocorrer uma exceção? Como nós desenvolvedores podemos ajustar o nosso algoritmo para
   amenizar o ocorrido?
 
-  
+    A instrução "try" permite que você defina um bloco de código para ser testado quanto a erros enquanto está
+  sendo executado.
+
+    A instrução "catch" permite definir um bloco de código a ser executado, caso ocorra um erro no bloco "try".
+
+    A instrução "finally" permite definir um bloco de código a ser executado independente de ocorrer um erro ou
+  não. As palavras-chave "try" e "catch" vêm em pares:
+
+    Estrutura de um bloco com "try" e "catch":
+
+    try{
+?         Bloco d código conforme esperado      
+    }
+    catch(Exception e) {
+?       Precisamos saber execeção
+
+?       bloco de código que captura as exceções que podem acontecer em caso de um fluxo não previsto
+
+    }
+
+?    O bloco "try / catch" pode conter um conjunto de catchs correspondentes a cada exceção que "prevista" em uma
+?  funcionalidade do programa.    
  */
