@@ -11,11 +11,17 @@ Existem duas grandes categorias que englobam a natureza do erro:
 
 ### Erros de Sintaxe:
 
-É um erro nas regras establecidas da linguagem: 1. Parênteses, chaves, colchetes que abrem mas não fecham; 2. Duas instruções sem um ponto-e-vírgula entre elas; 3. Uma palavra-chave sendo usada numa posição inesperada.
+É um erro nas regras establecidas da linguagem: 
+1. Parênteses, chaves, colchetes que abrem mas não fecham;
+2. Duas instruções sem um ponto-e-vírgula entre elas; 
+3. Uma palavra-chave sendo usada numa posição inesperada.
 
 ### Erros de Semântica:
 
-É um erro na "lógica do código", em sua semântica, o código está sintaticamente correto, porém não faz o que se esperava dele. 1. Tentar dividir um número por uma String ou por zero; 2. Atribuir um valor incoerente a um tipo de dado; 3. Tentar fechar um arquivo que não foi aberto.
+É um erro na "lógica do código", em sua semântica, o código está sintaticamente correto, porém não faz o que se esperava dele. 
+1. Tentar dividir um número por uma String ou por zero; 
+2. Atribuir um valor incoerente a um tipo de dado. Por exemplo: int n = "Piter"; 
+3. Tentar fechar um arquivo que não foi aberto.
 
 ## Depuração/Debugging
 
