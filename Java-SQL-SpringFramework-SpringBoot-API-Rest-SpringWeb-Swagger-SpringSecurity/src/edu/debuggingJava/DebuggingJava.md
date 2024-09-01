@@ -35,6 +35,6 @@ Toda invocação de método é empilhada em uma estrutura de dados que isola a �
 
 ## Links Úteis
 
-    1. [![https://confluence.jetbrains.com/display/IntelliJIDEA/14.+Depurador](https://confluence.jetbrains.com/display/IntelliJIDEA/14.+Depurador)]
+1. [![https://confluence.jetbrains.com/display/IntelliJIDEA/14.+Depurador](https://confluence.jetbrains.com/display/IntelliJIDEA/14.+Depurador)]
 
-    2. [![https://www.eclipse.org/community/eclipse_newsletter/2017/june/article1.php](https://www.eclipse.org/community/eclipse_newsletter/2017/june/article1.php)]
+2. [![https://www.eclipse.org/community/eclipse_newsletter/2017/june/article1.php](https://www.eclipse.org/community/eclipse_newsletter/2017/june/article1.php)]
