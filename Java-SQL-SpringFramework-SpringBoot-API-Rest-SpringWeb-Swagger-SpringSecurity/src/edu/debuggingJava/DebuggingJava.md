@@ -17,7 +17,7 @@ Existem duas grandes categorias que englobam a natureza do erro:
 
 É um erro na "lógica do código", em sua semântica, o código está sintaticamente correto, porém não faz o que se esperava dele. 1. Tentar dividir um número por uma String ou por zero; 2. Atribuir um valor incoerente a um tipo de dado; 3. Tentar fechar um arquivo que não foi aberto.
 
-### Depuração/Debugging
+## Depuração/Debugging
 
 Linguagens de alto nível tornam a depuração mais fácil, pois fornecem mais ferramentas para identificar erros, como o tratamento de exceções.
 
@@ -38,3 +38,19 @@ Toda invocação de método é empilhada em uma estrutura de dados que isola a �
 1. https://confluence.jetbrains.com/display/IntelliJIDEA/14.+Depurador
 
 2. https://www.eclipse.org/community/eclipse_newsletter/2017/june/article1.php
+
+## Referências
+
+1. https://www.hostgator.com.br/blog/debug-desenvolvimento-web/
+
+2. https://www.alura.com.br/conteudo/java-excecoes
+
+3. https://pt.wikipedia.org/wiki/Depura%C3%A7%C3%A3o
+
+4. https://www.sentinelone.com/blog/java-stack-trace-understanding/
+
+5. https://www.caelum.com.br/apostila-java-orientacao-objetos/excecoes-e-controle-de-erros#exercicio-para-comecar-com-os-conceitos
+
+#
+
+Disponibilizado por [cami-la](https://www.linkedin.com/in/cami-la/).
