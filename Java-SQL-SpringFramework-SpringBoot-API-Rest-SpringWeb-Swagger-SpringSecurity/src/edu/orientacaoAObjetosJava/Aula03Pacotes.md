@@ -2,11 +2,11 @@
 
 A linguagem Java é composta por milhares de classes com as finalidades de, por exemplo: Classes de tipos de dados, representação de texto, números, datas, arquivos e diretórios, conexão a banco de dados, entre outras. Imagina todas estas classes existirem em um único nível de documentos? E as classes desenvolvidas por nós, meros desenvolvedores de aplicações de vários os gêneros? Imagina como ficaria este diretório em?
 
-[Estrutura de Pacote](../../../img/Estrutura%20de%20pacotes.png)
+[../../../img/Estrutura%20de%20pacotes.png](../../../img/Estrutura%20de%20pacotes.png)
 
 Para prevenir este acontecimento, a linguagem dispõe de um recurso que organiza as classes padrão e criadas por nós, que conhecemos como pacote(package). Os pacotes são subdiretórios a partir da pasta "src" do nosso projeto onde estão localizadas as classes da linguagem e novas que forem criadas para o projeto. Existem algumas convenções para criação de pacotes já utilizados no mercado.
 
-[Estrutura de Pacote 2](../../../img/Estrutura%20de%20pacotes%202.png) [Estrutura de Pacote 3](../../../img/Estrutura%20de%20pacotes%203.png)
+[../../../img/Estrutura%20de%20pacotes%202.png](../../../img/Estrutura%20de%20pacotes%202.png) [(../../../img/Estrutura%20de%20pacotes%203.png](../../../img/Estrutura%20de%20pacotes%203.png)
 
 ## Nomenclatura
 
