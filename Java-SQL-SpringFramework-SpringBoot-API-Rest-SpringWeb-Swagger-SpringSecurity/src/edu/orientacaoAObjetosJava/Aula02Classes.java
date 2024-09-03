@@ -1,6 +1,6 @@
 package edu.orientacaoAObjetosJava;
 
-public class Classes {
+public class Aula02Classes {
 /*
 !       CLASSES
 
