@@ -6,7 +6,7 @@ A linguagem Java é composta por milhares de classes com as finalidades de, por 
 
 Para prevenir este acontecimento, a linguagem dispõe de um recurso que organiza as classes padrão e criadas por nós, que conhecemos como pacote(package). Os pacotes são subdiretórios a partir da pasta "src" do nosso projeto onde estão localizadas as classes da linguagem e novas que forem criadas para o projeto. Existem algumas convenções para criação de pacotes já utilizados no mercado.
 
-![../../../img/Estrutura%20de%20pacotes%202.png](../../../img/Estrutura%20de%20pacotes%202.png)] ![(../../../img/Estrutura%20de%20pacotes%203.png](../../../img/Estrutura%20de%20pacotes%203.png)
+![../../../img/Estrutura%20de%20pacotes%202.png](../../../img/Estrutura%20de%20pacotes%202.png) ![../../../img/Estrutura%20de%20pacotes%203.png](../../../img/Estrutura%20de%20pacotes%203.png)
 
 ## Nomenclatura
 
@@ -51,3 +51,11 @@ A localização de uma classe é definida pela palavra reservada package, logo, 
       public class MinhaClassea {
 
       }
+
+## Por que é tão importante compreender de pacotes?
+
+A linguagem Java é composta por milhares de classes internas, classes desenvolvidas em projetos disponível através de bibliotecas e as classes do nosso projeto. Logo, existe uma enorme possibilidade da existência de classes de mesmo nome.
+
+É nesta hora, que nós desenvolvedores precisamos detectar qual classe iremos importar em nosso projeto.
+
+Um exemplo clássico é a existência das classes "java.sql.Date" e "java.util.Date" da própria linguagem, recomendo você leitor pesquisar sobre a diferença das duas classes.
