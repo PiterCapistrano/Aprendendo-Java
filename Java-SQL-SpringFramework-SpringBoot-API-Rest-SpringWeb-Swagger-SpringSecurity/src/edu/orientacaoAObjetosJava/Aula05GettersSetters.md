@@ -42,6 +42,8 @@ Seguindo a convenção Java Beans, uma classe que contém esta estrutura de esta
   EX.: public void setNome(String newNome);
 
        // arquivo Aluno.java
+       package aluno;
+
        public class Aluno {
          private String nome;
          private int idade;
@@ -62,3 +64,19 @@ Seguindo a convenção Java Beans, uma classe que contém esta estrutura de esta
            idade = newIdade;
          }
        }
+
+      // arquivo Escola.java
+      package escola;
+
+      public class Escola {
+          public static void main(String[] args) {
+              Aluno piter = new Aluno();
+
+              piter.setNome("Piter");
+              piter.setIdade(32);
+
+              System.out.println("O aluno " + piter.getNome() + " tem " + piter.getIdade() + " anos");
+              // RESULTADO NO CONSOLE
+              // O aluno Piter tem 32 anos
+          }
+      }
