@@ -78,6 +78,10 @@ Os atributos e métodos de uma classe podem receber níveis de visibilidade, e n
 
 ![../../../img/Representação%20UML.png](../../../img/Representação%20UML.png)
 
+## Exercício Para Praticar
+
+![../../../img/Exercícios%20UML.png](../../../img/Exercícios%20UML.png)
+
 ## Ferramentas
 
 Existem inúmeras ferramentas de diagramação tanto online, pagas e gratuitas.
