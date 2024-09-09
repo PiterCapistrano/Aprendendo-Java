@@ -539,3 +539,139 @@ abstract class ServicoMensagemInstantanea4 {
       System.out.println("Recebendo mensagem pelo Telegram");
     }
   }
+/*
+!           INTERFACE
+
+?       Antes de tudo, "NÃO" estamos nos referindo a interface gráfica.
+
+    Como vimos anteriormente "Herança" é um dos pilares de POO mas uma curiosidade que se deve ser esclarecida na linguagem
+  Java é que a mesma não permite o que conhecemos como "Herança Múltipla".
+
+    Á medida que vão surgindo novas necessidades, novos equipamentos (objetos) nascem para atender as expectativas de
+  oferecer ferramentas com finalidades bem específicas como por exemplo: Impressoras, Digitalizadoras, Copiadoras e etc.
+
+    Observem que não há uma especificação de marca, modelo e ou capacidades de execução das classes citadas acima, isto
+  é o que consideramos o nível mais abstrato da orientação a objetos que denominamos como "interfaces".
+
+?     Então o que você está dizendo é que "interfaces" é o mesmo que "classes"?
+?     Um molde para representação dos objetos reais?
+
+    Este é um dos maiores questionamentos dos desenvolvedores no que se refere a modelo de classes da aplicação.
+
+    Como citado acima Java não permite herança múltipla, logo, vamos imaginar que recebemos o desafio de projetar uma
+  nova classe para criar objetos que representem as três características citadas acima e que iremos denominar de 
+  "EquipamentoMultifuncional".
+
+!       TESTE ABAIXO:
+
+class Impressora{
+  public void imprimir(){
+    System.out.println("IMPRIMINDO");
+  }
+}
+class Copiadora{
+  public void copiar(){
+    System.out.println("COPIANDO");
+  }
+}
+class Digitalizadora{
+  public void digitalizar(){
+    System.out.println("DIGITALIZANDO");
+  }
+}
+  Não é possível herdar mais de uma classe. como na classe abaixo: 
+class EquipamentoMultifuncional extends Impressora extends Copiadora extends Digitalizadora {
+
+}
+
+    Para uma melhor compreensão, vamos analisar os diagramas de classes abaixo, comparando o conceito de herança entre
+  classes e interfaces.
+
+?     Cenário 1
+
+    <<abstract>>                               <<abstract>>                              <<abstract>>
+     Impressora                                 Copiadora                               Digitalizadora
++ imprimir() : void                         + copiar() : void                      + digitalizar() : void
+
+Laserjet      Deskjet                             Xerox                                     Scanner
+
+?     Cenário 2
+
+   <<interface>>                              <<interface>>                             <<interface>>
+     Impressora                                 Copiadora                               Digitalizadora
++ imprimir() : void                         + copiar() : void                      + digitalizar() : void
+
+Laserjet      Deskjet                             Xerox                                     Scanner
+
+
+                                        EquipamentoMultifuncional
+     Impressora                                 Copiadora                               Digitalizadora
++ imprimir() : void                         + copiar() : void                      + digitalizar() : void
+
+
+    Antes de iniciarmos a representação via código, devemos compreender que, assim como em classes e métodos abstratos,
+  quando herdamos de uma interface, precisamos implementar todos os seus métodos, pois os mesmos são implicitamente
+  "public abstract".
+
+    E para encerar, uma das mais importantes ilustrções quanto ao uso de interfaces para desenvolvimento de componentes
+  revolucinários é apresentado em 2007 por nada mais nada menos que Steve Jobs ao lançar o primeiro "iPhone" da história.
+
+?   Um único equipamento que pode ser considerado tanto como um: Reprodutor Musical, Aparelho Telefônico e Navegador na 
+?  Internet.
+
+! EXEMPLO PRÁTICO USO DE INTERFACE:
+*/
+
+interface Impressora{
+  public void imprimir(); // Funções da interface não possuem corpo, assim como as funções abstratas
+}
+interface Copiadora{
+  public void copiar();
+}
+interface Digitalizadora{
+  public void digitalizar();
+}
+class Laserjet implements Impressora{ // Para herdar interfaces ao invés de usarmos "extends" usamos "implements"
+  public void imprimir(){
+    System.out.println("IMPRIMINDO com Laserjet");
+  }
+}
+class Deskjet implements Impressora{
+  public void imprimir(){
+    System.out.println("IMPRIMINDO com Deskjet");
+  }
+}
+class Xerox implements Copiadora{
+  public void copiar(){
+    System.out.println("COPIANDO com Xerox");
+  }
+}
+class Scanner implements Digitalizadora{
+  public void digitalizar(){
+    System.out.println("DIGITALIZANDO com Scanner");
+  }
+}
+ // Agora podemos implementar várias interfaces ao contrario das classes que só deixa herdar uma classe.
+class EquipamentoMultifuncional implements Impressora, Copiadora, Digitalizadora{
+  public void imprimir(){
+    System.out.println("IMPRIMINDO VIA EQUIPAMENTO MULTIFUNCINAL");
+  }
+  public void copiar(){
+    System.out.println("COPIANDO VIA EQUIPAMENTO MULTIFUNCINAL");
+  }
+  public void digitalizar(){
+    System.out.println("DIGITALIZANDO VIA EQUIPAMENTO MULTIFUNCINAL");
+  }
+}
+class Fabrica{
+  public static void main(String[] args) {
+    EquipamentoMultifuncional em = new EquipamentoMultifuncional();
+    Impressora impressora = em;
+    Digitalizadora digitalizadora = em;
+    Copiadora copiadora = em;
+
+    impressora.imprimir();
+    digitalizadora.digitalizar(); 
+    copiadora.copiar();
+  }
+}

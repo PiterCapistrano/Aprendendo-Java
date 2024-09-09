@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Fabrica",
+      "request": "launch",
+      "mainClass": "edu.pilaresDoPOO.Fabrica",
+      "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
+    },
+    {
+      "type": "java",
       "name": "ComputadorJorginho",
       "request": "launch",
       "mainClass": "edu.pilaresDoPOO.ComputadorJorginho",
