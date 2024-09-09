@@ -215,7 +215,7 @@ perfeitamente o segundo pilar da POO, a Herança.
 ?     Exemplo abaixo:
  */
 
-class ComputadorZezinho(){
+class ComputadorZezinho{
   
   public static void main(String[] args) {
     // Abrindo MSN Messenger
@@ -256,14 +256,17 @@ class ServicoMensagemInstantanea {
   }
 }
 
-class Msn extends ServicoMensagemInstantanea(){
+class Msn extends ServicoMensagemInstantanea{
 
 }
 
-class FacebookMessenger extends ServicoMensagemInstantanea(){
+class FacebookMessenger extends ServicoMensagemInstantanea{
 
 }
 
-class Telegram extends ServicoMensagemInstantanea(){
+class Telegram extends ServicoMensagemInstantanea{
 
 }
+/*
+    Podemos avaliar    
+ */
