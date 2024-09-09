@@ -119,16 +119,21 @@ abstract class Veiculo {
 
 class MSNMenssenger {
   public void enviarMensagem(){
+
+    validarConectadoInternet(); // Encapsulamento da função
+
     System.out.println("Enviando mensagem");
+
+    salvarHistoricoMensagem(); // Encapsulamento da função
   }
   public void receberMensagem(){
     System.out.println("Recebendo mensagem");
   }
-  public void validarConectadoInternet(){
-    System.out.println("Validando se está conectado a internet");
+  private void validarConectadoInternet(){
+    System.out.println("Validando se está conectado a internet"); //Tornando metódo privado para Encapsular
   }
-  public void salvarHistoricoMensagem(){
-    System.out.println("Salvando o histórico da mensagem");
+  private void salvarHistoricoMensagem(){
+    System.out.println("Salvando o histórico da mensagem"); //Tornando metódo privado para Encapsular
   }
 }
 /*
@@ -138,4 +143,49 @@ class MSNMenssenger {
 
     - Só existe uma única forma de se comunicar via internet (como ter novas formas de se comunicar mantendo a
     proposta central?)
+
+!       ENCAPSULAMENTO
+
+?     Nem tudo precisa ser ou estar disponível para todos
+
+    Já imaginou você instalar o MSN Messenger e ao querer enviar uma mensagem, te fosse solicitado verificar se o
+  computador está conectado a internet e depois, pedir para você salvar a mensagem no histórico? Ou, se ao tentar
+  enviar um SMS pelo celular, primeiro você precisasse consultar manualmente o seu saldo?
+
+    Acredito que não seria uma experiência tão agradável de ser executada recorrentemente por nós usuários.
+
+    Mesmo ainda sendo necessária algumas etapas nos processos citados, não é um requisito uma visibilidade pública,
+  isso quer dizer que, além da própria classe que possui a responsabilidades de uma determinada ação.
+
+    Quanto ao MSN Messenger, para nós, só é relevante saber que podemos e como devemos enviar e receber a mensagem,
+  logo, as demais funcionalidades poderão ser consideradas privadas (private). E é ai que se caracteriza a necessidade
+  do pilar de Encapsulamento, o que esconder?
+
+    Vejamos a refatoração abaixo da nossa classe MSN Messenger
  */
+
+//? Exemplo sem Encapsulamento:
+class ComputadorPedrinho{
+  public static void main(String[] args) {
+    // Abrindo MSN Messenger
+    MSNMenssenger msn = new MSNMenssenger();
+
+    //msn.validarConectadoInternet();
+    msn.enviarMensagem();
+    //msn.salvarHistoricoMensagem();
+
+    msn.receberMensagem();
+  }
+}
+
+//? Exemplo com Encapsulamento:
+class ComputadorPedrinhoEncapsulado{
+  public static void main(String[] args) {
+    // Abrindo MSN Messenger
+    MSNMenssenger msn = new MSNMenssenger();
+
+    msn.enviarMensagem();
+
+    msn.receberMensagem();
+  }
+}
