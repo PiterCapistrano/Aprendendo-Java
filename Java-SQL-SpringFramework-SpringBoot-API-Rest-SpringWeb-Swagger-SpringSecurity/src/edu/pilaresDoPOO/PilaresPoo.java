@@ -220,7 +220,7 @@ class ComputadorZezinho{
   public static void main(String[] args) {
     // Abrindo MSN Messenger
     System.out.println("MSN");
-    MSNMenssenger msn = new MSNMenssenger();
+    Msn msn = new Msn();
     msn.enviarMensagem();
     msn.receberMensagem();
 
@@ -268,5 +268,94 @@ class Telegram extends ServicoMensagemInstantanea{
 
 }
 /*
-    Podemos avaliar    
+    Podemos avaliar a importância de compreeder os pilares de POO para ter uma melhor implementação, reaproveitamento
+  e reutilização de código em qualquer contexto das nossas aplicações, mas não para por ai.
+
+    Será que todos os sistemas de mensagens realizam as suas operações de uma mesma maneira? E agora? Este é um
+  trabalho para os pilares "Abstração" e "Polimorfismo".
+
+!         ABSTRAÇÃO
+
+?       Para você ser é preciso você fazer.
+
+    Sabemos que qualquer sistema de mensagens instatâneas se realiza as mesmas operações de Enviar e Receber Mensagem,
+  dentre outras operações comuns ou exclusivas de cada aplicativo disponível no mercado.
+
+    Mas será se as ações realizadas contém o mesmo comportamento?
+    Acreditamos que não.
+
+?      Já imaginou a Microsoft falar para o Facebook: "Ei, toma meu código do MSN".
+
+    O que vale destacar para compreender aqui é que todo e qualquer sistema de mensagem precisa sem no mínimo
+  Enviar e Receber Mensagem, logo, consideramos se firmar um "contrato" para qualquer um que queira se apresentar
+  assim para o mercado.
+
+    Observem a nova estruturação dos códigos abaixo com base na implementação apresentada no pilar "Herança".
+ */
+
+ 
+class ComputadorMariazinha{
+  
+  public static void main(String[] args) {
+    // Abrindo MSN Messenger
+    System.out.println("MSN");
+    Msn2 msn = new Msn2();
+    msn.enviarMensagem();
+    msn.receberMensagem();
+
+    System.out.println("Facebook");
+    FacebookMessenger2 fcb = new FacebookMessenger2();
+    fcb.enviarMensagem();
+    fcb.receberMensagem();
+
+    System.out.println("Telegram");
+    Telegram2 tlg = new Telegram2();
+    tlg.enviarMensagem();
+    tlg.receberMensagem();
+  }
+}
+
+abstract class ServicoMensagemInstantanea2 {
+// Métodos abstratos NÃO possuem corpo na classe abstrata (pai).
+  public abstract void enviarMensagem(); 
+  public abstract void receberMensagem();
+}
+
+class Msn2 extends ServicoMensagemInstantanea2{
+  @Override
+  public void enviarMensagem(){
+    System.out.println("Enviando mensagem pelo MSN Messenger");
+  }
+  @Override
+  public void receberMensagem(){
+    System.out.println("Recebendo mensagem pelo MSN Messenger");
+  }
+}
+
+class FacebookMessenger2 extends ServicoMensagemInstantanea2{
+  @Override
+  public void enviarMensagem(){
+    System.out.println("Enviando mensagem pelo Facebook Messenger");
+  }
+  @Override
+  public void receberMensagem(){
+    System.out.println("Recebendo mensagem pelo Facebook Messenger");
+  }
+}
+
+class Telegram2 extends ServicoMensagemInstantanea2{
+  @Override
+  public void enviarMensagem(){
+    System.out.println("Enviando mensagem pelo Telegram");
+  }
+  @Override
+  public void receberMensagem(){
+    System.out.println("Recebendo mensagem pelo Telegram");
+  }
+}
+/*
+?       Em java o conceito de abstração é representado pela palavra reservada "abstract" e métodos que NÃO possuem
+?     corpo na classe abstrata (pai).
+
+
  */

@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ComputadorMariazinha",
+      "request": "launch",
+      "mainClass": "edu.pilaresDoPOO.ComputadorMariazinha",
+      "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
+    },
+    {
+      "type": "java",
+      "name": "ComputadorMarianha",
+      "request": "launch",
+      "mainClass": "edu.pilaresDoPOO.ComputadorMarianha",
+      "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
+    },
+    {
+      "type": "java",
       "name": "ComputadorZezinho",
       "request": "launch",
       "mainClass": "edu.pilaresDoPOO.ComputadorZezinho",
