@@ -1,8 +1,5 @@
 package edu.pilaresDoPOO;
 
-import edu.pilaresDoPOO.Msn.FacebookMessenger;
-import edu.pilaresDoPOO.Msn.FacebookMessenger.Telegram;
-
 public class PilaresPoo {
 /*
 !       PILARES DA POO
