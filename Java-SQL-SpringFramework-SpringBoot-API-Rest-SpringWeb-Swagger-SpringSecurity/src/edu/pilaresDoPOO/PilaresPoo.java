@@ -357,5 +357,185 @@ class Telegram2 extends ServicoMensagemInstantanea2{
 ?       Em java o conceito de abstração é representado pela palavra reservada "abstract" e métodos que NÃO possuem
 ?     corpo na classe abstrata (pai).
 
+!         POLIMORFISMO
 
+?       Um mesmo comportamento de várias maneiras
+
+    Podemos observar no contexto de "Abstração" e "Herança" que conseguimos criar uma singularidade estrutural de nossos
+  elementos. Isso quer dizer que, qualquer classe que deseja representar um serviço de mensagens, basta estender a classe
+  "ServicoMensagemInstantanea" e implementar os respectivos métodos "abstratos". O que vale reforçar aqui é, cada classe
+  terá a mesma ação executando procedimentos de maneira especializada.
+
+?       POLIMORFISMO - O QUE É?
+
+    Este o resultado do que denominados como Polimorfismo. Veja o exemplo abaixo:
  */
+class ComputadorJoaozinho{
+  public static void main(String[] args) {
+    ServicoMensagemInstantanea3 smi = null;
+
+    /*
+      não se sabe qual app
+      mas qualquer um deverá enviar e receber mensagens
+     */
+    String appEscolhido = "tlg";
+
+    if (appEscolhido.equals("msn")) 
+      smi = new MSNMenssenger3();
+    else if (appEscolhido.equals("fbm")) 
+      smi = new FacebookMessenger3();
+    else if (appEscolhido.equals("tlg")) 
+      smi = new Telegram3();
+    else
+      System.out.println("Escolha um app de mensagem instantânea");
+
+      smi.enviarMensagem();
+      smi.receberMensagem();
+  }
+}
+abstract class ServicoMensagemInstantanea3 {
+  // Métodos abstratos NÃO possuem corpo na classe abstrata (pai).
+    public abstract void enviarMensagem(); 
+    public abstract void receberMensagem();
+  }
+  
+  class MSNMenssenger3 extends ServicoMensagemInstantanea3{
+    @Override
+    public void enviarMensagem(){
+      System.out.println("Enviando mensagem pelo MSN Messenger");
+    }
+    @Override
+    public void receberMensagem(){
+      System.out.println("Recebendo mensagem pelo MSN Messenger");
+    }
+  }
+  
+  class FacebookMessenger3 extends ServicoMensagemInstantanea3{
+    @Override
+    public void enviarMensagem(){
+      System.out.println("Enviando mensagem pelo Facebook Messenger");
+    }
+    @Override
+    public void receberMensagem(){
+      System.out.println("Recebendo mensagem pelo Facebook Messenger");
+    }
+  }
+  
+  class Telegram3 extends ServicoMensagemInstantanea3{
+    @Override
+    public void enviarMensagem(){
+      System.out.println("Enviando mensagem pelo Telegram");
+    }
+    @Override
+    public void receberMensagem(){
+      System.out.println("Recebendo mensagem pelo Telegram");
+    }
+  }
+/*
+    Para concluirmos a compreensão, Polimorfismo permite que as classes mais abstratas determinem ações uniformes para
+  que as classes mais abstratas determinem ações uniformes para que cada classe filha concreta implementem os comportamentos
+  de forma específica.
+
+?     Modificador Protected
+
+    Vamos para uma retrospectiva quanto ao requisito do nosso sistema de mensagens instantâneas desde a etapa de encapsulamento.
+
+    O nosso requisito solicita que além de Enviar e Receber Mensagens precisamos validar se o aplicativo está conectado a
+  internet (validarConectadoInternet) e salvar o histórico de cada mensagem (salvarHistoricoMensagem).
+
+    Sabemos que cada aplicativo costuma salvar as mensagens em seus respectivos servidores cloud, mas e quanto a validar
+  se está conectado a internet? Não poderia ser um mecanismo comum à todos? Logo qualquer classe filha de "ServicoMensagemInstantanea"
+  poderia desfrutrar através de herança desta funcionalidade.
+
+    Mas fica a reflexão do que já aprendemos sobre visibilidade de recursos: Com o modificador "private" somente a classe
+  conhece a implementação quanto que o modificador "public" todos passarão a conhecer. Mas gostaríamos que somente as 
+  classes filha soubessem. Bem, é ai que entra o modificador "protected".
+ */
+class ComputadorJorginho{
+  public static void main(String[] args) {
+    ServicoMensagemInstantanea4 smi = null;
+
+    /*
+      não se sabe qual app
+      mas qualquer um deverá enviar e receber mensagens
+     */
+    String appEscolhido = "tlg";
+
+    if (appEscolhido.equals("msn")) 
+      smi = new MSNMenssenger4();
+    else if (appEscolhido.equals("fbm")) 
+      smi = new FacebookMessenger4();
+    else if (appEscolhido.equals("tlg")) 
+      smi = new Telegram4();
+    else
+      System.out.println("Escolha um app de mensagem instantânea");
+
+      smi.enviarMensagem();
+      smi.receberMensagem();
+      smi.salvarHistoricoMensagem();
+  }
+}
+abstract class ServicoMensagemInstantanea4 {
+  // Métodos abstratos NÃO possuem corpo na classe abstrata (pai).
+    public abstract void enviarMensagem(); 
+    public abstract void receberMensagem();
+
+    // mais um método que todos os filhos deverão implementar
+    public abstract void salvarHistoricoMensagem();
+
+    // somente os filhos conhecem este método
+    protected void validarConectadoInternet(){
+      System.out.println("Validando se está conectado");
+    }
+  }
+  
+  class MSNMenssenger4 extends ServicoMensagemInstantanea4{
+    @Override
+    public void enviarMensagem(){
+      // Método Polimorfo para validação de internet
+      validarConectadoInternet();
+      System.out.println("Enviando mensagem pelo MSN Messenger");
+    }
+    @Override
+    public void salvarHistoricoMensagem(){
+      System.out.println("Salvando o histórico da mensagem do MSN Messenger");
+    }
+    @Override
+    public void receberMensagem(){
+      System.out.println("Recebendo mensagem pelo MSN Messenger");
+    }
+  }
+  
+  class FacebookMessenger4 extends ServicoMensagemInstantanea4{
+    @Override
+    public void enviarMensagem(){
+      // Método Polimorfo para validação de internet
+      validarConectadoInternet();
+      System.out.println("Enviando mensagem pelo Facebook Messenger");
+    }
+    @Override
+    public void salvarHistoricoMensagem(){
+      System.out.println("Salvando o histórico da mensagem do Facebook Messenger");
+    }
+    @Override
+    public void receberMensagem(){
+      System.out.println("Recebendo mensagem pelo Facebook Messenger");
+    }
+  }
+  
+  class Telegram4 extends ServicoMensagemInstantanea4{
+    @Override
+    public void enviarMensagem(){
+      // Método Polimorfo para validação de internet
+      validarConectadoInternet();
+      System.out.println("Enviando mensagem pelo Telegram");
+    }
+    @Override
+    public void salvarHistoricoMensagem(){
+      System.out.println("Salvando o histórico da mensagem do Telegram");
+    }
+    @Override
+    public void receberMensagem(){
+      System.out.println("Recebendo mensagem pelo Telegram");
+    }
+  }
