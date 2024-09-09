@@ -1,5 +1,8 @@
 package edu.pilaresDoPOO;
- 
+
+import edu.pilaresDoPOO.Msn.FacebookMessenger;
+import edu.pilaresDoPOO.Msn.FacebookMessenger.Telegram;
+
 public class PilaresPoo {
 /*
 !       PILARES DA POO
@@ -196,6 +199,71 @@ class ComputadorPedrinhoEncapsulado{
 
     Já imaginou você ter sido classificado para a vaga de emprego de seus sonhos e como desafio, justamente você
   criar um diagrama de classes e em seguida os repectivos arquivos .java que apresentasse os fundamentos de POO 
-  com base no contexto de vários aplicativos de mensagens instantâneas? Sorte sua que você está nos acompanhando
-  em nossa jornada.
+  com base no contexto de vários aplicativos de mensagens instantâneas?
+
+    Com base MSNMessenger, você já poderia dar os primeiros passo para se dar bem no processo seletivo, simplesmente,
+  copiar e colar a estrutura para as novas classes "FacebookMessenger", "Telegram" e "BINGO" !!!
+
+  ? Lamentamos dizer, mas esta não seria a melhor alternativa para a proposta citada acima.
+
+    Além de uma compreensão do desafio, é necessário, que tenhamos domínio dos pilares de POO e aplicá-los em
+  situações iguais a esta.
+
+  NOTE: Todas as três classes possuem a mesma estrutura comportamental, e diante deste contexto se encaixa
+perfeitamente o segundo pilar da POO, a Herança.
+
+?     Exemplo abaixo:
  */
+
+class ComputadorZezinho(){
+  
+  public static void main(String[] args) {
+    // Abrindo MSN Messenger
+    System.out.println("MSN");
+    MSNMenssenger msn = new MSNMenssenger();
+    msn.enviarMensagem();
+    msn.receberMensagem();
+
+    System.out.println("Facebook");
+    FacebookMessenger fcb = new FacebookMessenger();
+    fcb.enviarMensagem();
+    fcb.receberMensagem();
+
+    System.out.println("Telegram");
+    Telegram tlg = new Telegram();
+    tlg.enviarMensagem();
+    tlg.receberMensagem();
+  }
+}
+
+class ServicoMensagemInstantanea {
+  public void enviarMensagem() {
+      // primeiro confirmar se esta conectado a internet
+      validarConectadoInternet();
+      System.out.println("Enviando mensagem");
+      // depois de enviada, salva o histórico da mensagem
+      salvarHistoricoMensagem();
+  }
+  public void receberMensagem(){
+    System.out.println("Recebendo mensagem");
+  }
+  // Métodos privadas, visíveis somente na classe
+  private void validarConectadoInternet(){
+    System.out.println("Validando se está conectado a internet");
+  }
+  private void salvarHistoricoMensagem(){
+    System.out.println("Salvando o histórico da mensagem");
+  }
+}
+
+class Msn extends ServicoMensagemInstantanea(){
+
+}
+
+class FacebookMessenger extends ServicoMensagemInstantanea(){
+
+}
+
+class Telegram extends ServicoMensagemInstantanea(){
+
+}

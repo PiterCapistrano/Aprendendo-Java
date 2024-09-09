@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ComputadorZezinho",
+      "request": "launch",
+      "mainClass": "edu.pilaresDoPOO.ComputadorZezinho",
+      "projectName": "Dominando a Linguagem de Programação Java_45d3c555"
+    },
+    {
+      "type": "java",
       "name": "ComputadorPedrinhoEncapsulado",
       "request": "launch",
       "mainClass": "edu.pilaresDoPOO.ComputadorPedrinhoEncapsulado",
