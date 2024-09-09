@@ -189,3 +189,13 @@ class ComputadorPedrinhoEncapsulado{
     msn.receberMensagem();
   }
 }
+/*
+!         HERANÇA
+
+?     Nem tudo se copia, as vezes se herda
+
+    Já imaginou você ter sido classificado para a vaga de emprego de seus sonhos e como desafio, justamente você
+  criar um diagrama de classes e em seguida os repectivos arquivos .java que apresentasse os fundamentos de POO 
+  com base no contexto de vários aplicativos de mensagens instantâneas? Sorte sua que você está nos acompanhando
+  em nossa jornada.
+ */
